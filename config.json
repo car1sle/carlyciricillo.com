@@ -1,0 +1,16 @@
+{
+  "source": [
+    "tokens.json"
+  ],
+  "platforms": {
+    "js": {
+      "transformGroup": "js",
+      "files": [
+        {
+          "destination": "sd-tokens.js",
+          "format": "javascript/module"
+        }
+      ]
+    }
+  }
+}

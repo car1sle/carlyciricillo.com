@@ -1,0 +1,32 @@
+{
+  "name": "carlyciricillo.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/car1sle/carlyciricillo.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/car1sle/carlyciricillo.com/issues"
+  },
+  "homepage": "https://github.com/car1sle/carlyciricillo.com#readme",
+  "dependencies": {
+    "create-react-app": "^1.2.1",
+    "express": "^4.16.3",
+    "express-generator": "^4.2.0",
+    "fs": "^0.0.1-security",
+    "isomorphic-fetch": "^3.0.0",
+    "nodemon": "^2.0.16",
+    "token-transformer": "^0.0.23"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+package-lock.json
+creds.js
+client
+.DS_store
