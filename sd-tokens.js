@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 19 Jun 2022 19:58:02 GMT
+ * Generated on Sat, 25 Jun 2022 04:02:11 GMT
  */
 
 module.exports = {
@@ -222,11 +222,11 @@ module.exports = {
           ]
         },
         "hover": {
-          "value": "#4a4a4a",
+          "value": "#000000",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
-            "value": "#4a4a4a"
+            "value": "#000"
           },
           "name": "ColorTextHeaderHover",
           "attributes": {

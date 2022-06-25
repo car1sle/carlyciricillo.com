@@ -43,7 +43,8 @@ console.log("border tokens:", sdBorderTokens)
 
 module.exports = {
   content: [
-  	'index.html'
+  	'index.html',
+    'index.js',
   ],
   theme: {
     colors: sdColorTokens,
