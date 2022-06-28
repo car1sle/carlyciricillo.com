@@ -8,10 +8,7 @@
 
 To dos:
 move JS into a scripts folder
-try out live server exension
 
 mobile nav updates:
-Change carat to UP when desktop/mobile menus are expanded
-Hide mobile menu when clicking elsewhere on page
 Hide mobile menu on larger screens (using sm:hidden , it will come back when the screen is resized back to mobile again)
 change nav links to lis

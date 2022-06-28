@@ -720,6 +720,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.leading-none {
+  line-height: 1;
+}
+
 .text-text-header-base {
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
