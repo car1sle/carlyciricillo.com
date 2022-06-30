@@ -7,8 +7,6 @@
 3) Run npx tailwindcss -i css/input.css -o css/output.css --watch to: 1) build index.html and have styles reflected in ouput.css and 2) integrate the sd-tokens with Tailwind (output.css)
 
 To dos:
-move JS into a scripts folder
-
-mobile nav updates:
-Hide mobile menu on larger screens (using sm:hidden , it will come back when the screen is resized back to mobile again)
-change nav links to lis
+move JS into a scripts folder\
+revisit canva color theory & add to colors documentation\
+change mobile menu to slide down & up

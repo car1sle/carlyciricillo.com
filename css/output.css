@@ -480,6 +480,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -490,6 +494,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-0 {
   right: 0px;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .mx-auto {
@@ -515,6 +523,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .block {
@@ -557,6 +570,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 56rem;
 }
 
+.list-none {
+  list-style-type: none;
+}
+
 .items-center {
   align-items: center;
 }
@@ -567,6 +584,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-0\.5 {
@@ -623,6 +644,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .stroke-icon-header-base {
   stroke: #969696;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-3\.5 {

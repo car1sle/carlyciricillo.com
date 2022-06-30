@@ -37,15 +37,15 @@
               <a href="./index.html" class="font-cursive text-text-header-base text-2xl font-bold">carlyciricillo.com</a>
             </div>
             <!-- Begin desktop nav -->
-            <div class="hidden sm:flex space-x-2 justify-end items-center overflow-hidden">
+            <ul class="hidden sm:flex space-x-2 justify-end items-center overflow-hidden list-none my-0 p-0">
               <!-- Use flex on divs to make border radius match? -->
-              <div class="flex">
+              <li class="flex">
                 <a href="./index.html" class="font-sans text-base leading-none text-text-header-pressed px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-pressed" aria-current="page">About Me</a>
-              </div>
-              <div class="flex">
+              </li>
+              <li class="flex">
                 <a href="#" class="font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover  hover:text-text-header-hover">Design</a>
-              </div>
-              <div class="overflow-hidden group">
+              </li>
+              <li class="overflow-hidden group">
                 <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover">
                   Development
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4">
@@ -54,23 +54,31 @@
                 </button>
                 <!-- Begin desktop dropdown -->
                 <div class="hidden absolute group-hover:block right-0">
-                  <div class="bg-background-menu-dropdown py-0.5 px-1.5 group-hover:mt-1 rounded-radius-button-nav">
-                    <a href="#" class="font-sans text-base leading-none text-text-header-base block text-right my-4 mx-3.5 hover:underline hover:text-text-header-hover">HTML Emails</a>
-                    <a href="#" class="font-sans text-base leading-none text-text-header-base block text-right my-4 mx-3.5 hover:underline hover:text-text-header-hover">Lists.cm</a>
-                  </div>
+                  <ul class="bg-background-menu-dropdown py-0.5 px-1.5 m-0 group-hover:mt-1 rounded-radius-button-nav list-none">
+                    <li class="font-sans text-base leading-none block text-right my-4 mx-3.5">
+                      <a href="#" class="text-text-header-base hover:underline hover:text-text-header-hover">HTML Emails</a>
+                    </li>
+                    <li class="font-sans text-base leading-none block text-right my-4 mx-3.5">
+                      <a href="#" class="text-text-header-base hover:underline hover:text-text-header-hover">Lists.cm</a>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div class="sm:hidden"></div>
           </div>
         </div>
     
         <!-- Begin mobile menu, show/hide based on menu mobile-menu-button click -->
-        <div class="hidden" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="./index.html" class="block font-sans text-base leading-none text-text-header-pressed px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-pressed" aria-current="page">About Me</a>
-            <a href="#" class="block font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover  hover:text-text-header-hover">Design</a>
-            <div class="block overflow-hidden group rounded-radius-button-nav">
+        <div class="hidden sm:hidden" id="mobile-menu">
+          <ul class="px-2 pt-2 pb-3 m-0 space-y-1 list-none">
+            <li class="block font-sans text-base leading-none px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-pressed">
+              <a href="./index.html" class="text-text-header-pressed" aria-current="page">About Me</a>
+            </li>
+            <li class="block font-sans text-base leading-none px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover">
+              <a href="#" class="text-text-header-base hover:text-text-header-hover">Design</a>
+            </li>
+            <li class="block overflow-hidden group rounded-radius-button-nav">
               <button class="w-full flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button">
                 Development
                 <!-- Chevron when dropdown is closed -->
@@ -83,12 +91,16 @@
                 </svg>
               </button>
               <!-- Begin mobile dropdown -->
-              <div class="hidden bg-background-menu-dropdown" id="mobile-menu-dropdown">
-                <a href="#" class="block font-sans text-base leading-none text-text-header-base pr-3.5 pl-7 py-2.5 hover:text-text-header-hover hover:underline">HTML Emails</a>
-                <a href="#" class="block font-sans text-base leading-none text-text-header-base pr-3.5 pl-7 py-2.5 hover:text-text-header-hover hover:underline">Lists.cm</a>
-              </div>
-            </div>
-          </div>
+              <ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
+                <li class="block font-sans text-base leading-none pr-3.5 pl-7 py-2.5">
+                  <a href="#" class="text-text-header-base hover:text-text-header-hover hover:underline">HTML Emails</a>
+                </li>
+                <li class="block font-sans text-base leading-none pr-3.5 pl-7 py-2.5">
+                  <a href="#" class="text-text-header-base hover:text-text-header-hover hover:underline">Lists.cm</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
