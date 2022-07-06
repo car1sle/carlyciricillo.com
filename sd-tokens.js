@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 30 Jun 2022 03:42:32 GMT
+ * Generated on Wed, 06 Jul 2022 02:30:51 GMT
  */
 
 module.exports = {
@@ -128,27 +128,27 @@ module.exports = {
       },
       "button": {
         "nav": {
-          "pressed": {
+          "active": {
             "value": "#f5acd2",
             "filePath": "tokens.json",
             "isSource": true,
             "original": {
               "value": "#F5ACD2"
             },
-            "name": "ColorBackgroundButtonNavPressed",
+            "name": "ColorBackgroundButtonNavActive",
             "attributes": {
               "category": "color",
               "type": "background",
               "item": "button",
               "subitem": "nav",
-              "state": "pressed"
+              "state": "active"
             },
             "path": [
               "color",
               "background",
               "button",
               "nav",
-              "pressed"
+              "active"
             ]
           },
           "hover": {
@@ -200,25 +200,25 @@ module.exports = {
             "base"
           ]
         },
-        "pressed": {
+        "active": {
           "value": "#141414",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
             "value": "#141414"
           },
-          "name": "ColorTextHeaderPressed",
+          "name": "ColorTextHeaderActive",
           "attributes": {
             "category": "color",
             "type": "text",
             "item": "header",
-            "subitem": "pressed"
+            "subitem": "active"
           },
           "path": [
             "color",
             "text",
             "header",
-            "pressed"
+            "active"
           ]
         },
         "hover": {
@@ -267,25 +267,25 @@ module.exports = {
             "base"
           ]
         },
-        "pressed": {
+        "active": {
           "value": "#636363",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
             "value": "#636363"
           },
-          "name": "ColorIconHeaderPressed",
+          "name": "ColorIconHeaderActive",
           "attributes": {
             "category": "color",
             "type": "icon",
             "item": "header",
-            "subitem": "pressed"
+            "subitem": "active"
           },
           "path": [
             "color",
             "icon",
             "header",
-            "pressed"
+            "active"
           ]
         }
       }

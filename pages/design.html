@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carly Ciricillo</title>
+    <title>Carly Ciricillo - Design</title>
     <meta name="description" content="Carly Ciricillo's Personal Website and Portfolio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/output.css"> <!-- Tailwind output CSS -->
+    <link rel="stylesheet" href="../css/output.css"> <!-- Tailwind output CSS -->
   </head>
   <body class="bg-background-page-home">
 
@@ -34,13 +34,13 @@
             </div>
             <!-- Begin logo -->
             <div class="text-center sm:text-left">
-              <a href="./" class="font-cursive text-text-header-base text-2xl font-bold">carlyciricillo.com</a>
+              <a href="../" class="font-cursive text-text-header-base text-2xl font-bold">carlyciricillo.com</a>
             </div>
             <!-- Begin desktop nav -->
             <ul class="hidden sm:flex space-x-2 justify-end items-center overflow-hidden list-none my-0 p-0">
               <!-- Only using flex on lis to make border radius match? -->
               <li class="flex">
-                <a href="pages/design.html" class="font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover hover:text-text-header-hover">Design</a>
+                <a href="./design.html" class="font-sans text-base leading-none text-text-header-active px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-active">Design</a>
               </li>
               <li class="overflow-hidden group">
                 <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover">
@@ -53,10 +53,10 @@
                 <div class="hidden absolute group-hover:block right-0">
                   <ul class="bg-background-menu-dropdown py-0.5 px-1.5 m-0 group-hover:mt-1 rounded-radius-button-nav list-none">
                     <li class="font-sans text-base leading-none block text-right my-4 mx-3.5">
-                      <a href="pages/html-emails.html" class="text-text-header-base hover:underline hover:text-text-header-hover">HTML Emails</a>
+                      <a href="./html-emails.html" class="text-text-header-base hover:underline hover:text-text-header-hover">HTML Emails</a>
                     </li>
                     <li class="font-sans text-base leading-none block text-right my-4 mx-3.5">
-                      <a href="pages/lists.html" class="text-text-header-base hover:underline hover:text-text-header-hover">Lists.cm</a>
+                      <a href="./lists.html" class="text-text-header-base hover:underline hover:text-text-header-hover">Lists.cm</a>
                     </li>
                   </ul>
                 </div>
@@ -69,8 +69,8 @@
         <!-- Begin mobile menu, show/hide based on menu mobile-menu-button click -->
         <div class="hidden sm:hidden" id="mobile-menu">
           <ul class="px-2 pt-2 pb-3 m-0 space-y-1 list-none">
-            <li class="block font-sans text-base leading-none px-3.5 rounded-radius-button-nav hover:bg-background-button-nav-hover">
-              <a href="pages/design.html" class="text-text-header-base hover:text-text-header-hover block py-2.5">Design</a>
+            <li class="block font-sans text-base leading-none px-3.5 rounded-radius-button-nav bg-background-button-nav-active">
+              <a href="./design.html" class="text-text-header-active block py-2.5">Design</a>
             </li>
             <li class="block overflow-hidden group rounded-radius-button-nav">
               <button class="w-full flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button">
@@ -87,10 +87,10 @@
               <!-- Begin mobile dropdown -->
               <ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
                 <li class="block font-sans text-base leading-none pr-3.5 pl-7">
-                  <a href="pages/html-emails.html" class="text-text-header-base hover:text-text-header-hover hover:underline block py-2.5">HTML Emails</a>
+                  <a href="./html-emails.html" class="text-text-header-base hover:text-text-header-hover hover:underline block py-2.5">HTML Emails</a>
                 </li>
                 <li class="block font-sans text-base leading-none pr-3.5 pl-7">
-                  <a href="pages/lists.html" class="text-text-header-base hover:text-text-header-hover hover:underline block py-2.5">Lists.cm</a>
+                  <a href="./lists.html" class="text-text-header-base hover:text-text-header-hover hover:underline block py-2.5">Lists.cm</a>
                 </li>
               </ul>
             </li>
@@ -100,12 +100,12 @@
     </header>
 
     <main>
-        <div class="w-3/4 italic text-center m-auto py-5">[this page will be the About Me]</div>
+        <div class="w-3/4 italic text-center m-auto py-5">[this page will talk about using Figma, Style Dictionary, color theory & Tailwind CSS to build this site]</div>
     </main>
 
     <footer></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

@@ -45,6 +45,7 @@ module.exports = {
   content: [
   	'index.html',
     'index.js',
+    'pages/*.html',
   ],
   theme: {
     colors: sdColorTokens,

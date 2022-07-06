@@ -7,6 +7,8 @@
 3) Run npx tailwindcss -i css/input.css -o css/output.css --watch to: 1) build index.html and have styles reflected in ouput.css and 2) integrate the sd-tokens with Tailwind (output.css)
 
 To dos:
+make top nav fixed to the top edge https://tailwindcss.com/docs/top-right-bottom-left\
+adjust z index of hamburger\
+when closing out of hamburger, collapse development dropdown\
 move JS into a scripts folder\
 revisit canva color theory & add to colors documentation\
-change mobile menu to slide down & up

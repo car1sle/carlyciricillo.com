@@ -480,8 +480,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
-.invisible {
-  visibility: hidden;
+.fixed {
+  position: fixed;
 }
 
 .absolute {
@@ -492,12 +492,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-0 {
   margin: 0px;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -508,6 +525,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .my-4 {
@@ -523,11 +545,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .block {
@@ -566,6 +583,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -584,10 +605,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-0\.5 {
@@ -632,14 +649,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 195 226 / var(--tw-bg-opacity));
 }
 
-.bg-background-button-nav-pressed {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 172 210 / var(--tw-bg-opacity));
-}
-
 .bg-background-menu-dropdown {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 240 / var(--tw-bg-opacity));
+}
+
+.bg-background-button-nav-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 172 210 / var(--tw-bg-opacity));
 }
 
 .stroke-icon-header-base {
@@ -695,6 +712,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.5rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -745,6 +767,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -754,9 +780,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.text-text-header-pressed {
+.text-text-header-active {
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .hover\:bg-background-button-nav-hover:hover {
