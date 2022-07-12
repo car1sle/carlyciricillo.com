@@ -14,8 +14,8 @@
   <body class="bg-background-page-home">
 
     <!-- Begin header -->
-    <header>
-      <nav class="bg-background-menu-nav">
+    <header class="sticky top-0 z-10">
+      <nav class="bg-background-menu-nav absolute w-full">
         <div class="mx-auto max-w-4xl">
           <div class="flex items-center justify-between h-14 sm:h-16 mx-5 sm:mx-8 relative">
             <!-- Begin mobile menu button -->
@@ -43,9 +43,9 @@
                 <a href="./design.html" class="font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover hover:text-text-header-hover">Design</a>
               </li>
               <li class="overflow-hidden group">
-                <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover">
+                <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-active group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover">
                   Development
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-active group-hover:stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
@@ -99,8 +99,8 @@
       </nav>
     </header>
 
-    <main>
-        <div class="w-3/4 italic text-center m-auto py-5">[this page will talk about the amazing https://lists.cm/]</div>
+    <main class="pt-14 sm:pt-16">
+        <div class="w-3/4 italic text-center m-auto py-5">[This page will talk about the amazing https://lists.cm/. I will include testimonials and explain future improvements.]</div>
     </main>
 
     <footer></footer>

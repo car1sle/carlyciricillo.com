@@ -492,9 +492,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .right-0 {
@@ -505,8 +505,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-0 {
@@ -545,6 +557,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .block {
@@ -631,6 +647,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
+.overscroll-none {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+
 .rounded-radius-button-nav {
   border-radius: 4px;
 }
@@ -661,6 +682,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .stroke-icon-header-base {
   stroke: #969696;
+}
+
+.stroke-icon-header-active {
+  stroke: #636363;
 }
 
 .p-0 {
@@ -737,6 +762,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -785,11 +814,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 .hover\:bg-background-button-nav-hover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 240 / var(--tw-bg-opacity));
@@ -818,15 +842,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(254 226 240 / var(--tw-bg-opacity));
 }
 
+.group:hover .group-hover\:stroke-icon-header-base {
+  stroke: #969696;
+}
+
 .group:hover .group-hover\:text-text-header-hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
+  .sm\:static {
+    position: static;
+  }
+
   .sm\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 4rem;
   }
 
   .sm\:flex {
@@ -839,6 +875,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:h-16 {
     height: 4rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
   }
 
   .sm\:text-left {

@@ -14,8 +14,8 @@
   <body class="bg-background-page-home">
 
     <!-- Begin header -->
-    <header>
-      <nav class="bg-background-menu-nav">
+    <header class="sticky top-0 z-10">
+      <nav class="bg-background-menu-nav absolute w-full">
         <div class="mx-auto max-w-4xl">
           <div class="flex items-center justify-between h-14 sm:h-16 mx-5 sm:mx-8 relative">
             <!-- Begin mobile menu button -->
@@ -69,8 +69,8 @@
         <!-- Begin mobile menu, show/hide based on menu mobile-menu-button click -->
         <div class="hidden sm:hidden" id="mobile-menu">
           <ul class="px-2 pt-2 pb-3 m-0 space-y-1 list-none">
-            <li class="block font-sans text-base leading-none px-3.5 rounded-radius-button-nav bg-background-button-nav-active">
-              <a href="./design.html" class="text-text-header-active block py-2.5">Design</a>
+            <li class="block font-sans text-base leading-none px-3.5 rounded-radius-button-nav hover:bg-background-button-nav-hover">
+              <a href="pages/design.html" class="text-text-header-base hover:text-text-header-hover block py-2.5">Design</a>
             </li>
             <li class="block overflow-hidden group rounded-radius-button-nav">
               <button class="w-full flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button">
@@ -99,8 +99,8 @@
       </nav>
     </header>
 
-    <main>
-        <div class="w-3/4 italic text-center m-auto py-5">[this page will talk about using Figma, Style Dictionary, color theory & Tailwind CSS to build this site]</div>
+    <main class="pt-14 sm:pt-16">
+        <div class="w-3/4 italic text-center m-auto py-5">[this page will talk about using Figma, Style Dictionary, color theory & Tailwind CSS to build this site. Show the figma files in the site.]</div>
     </main>
 
     <footer></footer>
