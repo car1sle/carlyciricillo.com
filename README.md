@@ -10,7 +10,7 @@
 
 To dos:\
 Test on Firefox\
-Revisit canva color theory & add to colors documentation\
+Revisit canva color theory & add to colors documentation
 
 Future imporvements:\
 Dark mode\
