@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/output.css"> <!-- Tailwind output CSS -->
   </head>
-  <body class="bg-background-page-home">
+  <body class="bg-background-page">
 
     <!-- Begin header -->
     <header class="sticky top-0 z-10">
@@ -40,26 +40,26 @@
             <ul class="hidden sm:flex space-x-2 justify-end items-center overflow-hidden list-none my-0 p-0">
               <!-- Only using flex on lis to make border radius match? -->
               <li class="flex">
-                <a href="pages/design.html" class="font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover hover:text-text-header-hover">Design</a>
+                <a href="./" class="font-sans text-base leading-none text-text-header-active px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-active">About Me</a>
               </li>
               <li class="overflow-hidden group">
                 <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-header-base px-3.5 py-2.5 rounded-radius-button-nav group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover">
-                  Development
+                  Projects
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
                 <!-- Begin desktop dropdown -->
-                <div class="hidden absolute group-hover:block right-0">
-                  <ul class="bg-background-menu-dropdown py-0.5 px-1.5 m-0 group-hover:mt-1 rounded-radius-button-nav list-none">
-                    <li class="font-sans text-base leading-none block text-right my-4 mx-3.5">
-                      <a href="pages/html-emails.html" class="text-text-header-base hover:underline hover:text-text-header-hover">HTML Emails</a>
+                <div id="dropdown-container" class="hidden absolute group-hover:block right-0"></div>
+                <template id="dropdown-template">
+                  <ul class="bg-background-menu-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-button-nav list-none overflow-hidden">
+                    {{#each pages}}
+                    <li class="font-sans text-base leading-none block text-right border-t-2 border-icon-header-base/40 first-of-type:border-0 hover:bg-icon-header-base/40 hover:border-background-menu-dropdown">
+                      <a href="pages/{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-header-base hover:text-text-header-hover">{{ name }}</a>
                     </li>
-                    <li class="font-sans text-base leading-none block text-right my-4 mx-3.5">
-                      <a href="pages/lists.html" class="text-text-header-base hover:underline hover:text-text-header-hover">Lists.cm</a>
-                    </li>
+                    {{/each}}
                   </ul>
-                </div>
+                </template>
               </li>
             </ul>
             <div class="sm:hidden"></div>
@@ -69,12 +69,12 @@
         <!-- Begin mobile menu, show/hide based on menu mobile-menu-button click -->
         <div class="hidden sm:hidden" id="mobile-menu">
           <ul class="px-2 pt-2 pb-3 m-0 space-y-1 list-none">
-            <li class="block font-sans text-lg leading-none px-3.5 rounded-radius-button-nav hover:bg-background-button-nav-hover">
-              <a href="pages/design.html" class="text-text-header-base hover:text-text-header-hover block py-2.5">Design</a>
+            <li class="block font-sans text-lg leading-none px-4 rounded-radius-button-nav hover:bg-background-button-nav-hover">
+              <a href="./" class="text-text-header-base hover:text-text-header-hover block py-3.5">About Me</a>
             </li>
             <li class="block overflow-hidden group rounded-radius-button-nav">
-              <button class="w-full flex items-center gap-0.5 font-sans text-lg leading-none text-text-header-base px-3.5 py-2.5 group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button">
-                Development
+              <button class="w-full flex items-center gap-0.5 font-sans text-lg leading-none text-text-header-base px-4 py-3.5 group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button">
+                Projects
                 <!-- Chevron when dropdown is closed -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4" id="chevron-closed">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -85,14 +85,16 @@
                 </svg>
               </button>
               <!-- Begin mobile dropdown -->
-              <ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
-                <li class="block font-sans text-lg leading-none pr-3.5 pl-7">
-                  <a href="pages/html-emails.html" class="text-text-header-base hover:text-text-header-hover hover:underline block py-2.5">HTML Emails</a>
-                </li>
-                <li class="block font-sans text-lg leading-none pr-3.5 pl-7">
-                  <a href="pages/lists.html" class="text-text-header-base hover:text-text-header-hover hover:underline block py-2.5">Lists.cm</a>
-                </li>
-              </ul>
+              <div id="dropdown-container-mobile"></div>
+              <template id="dropdown-template-mobile">
+                <ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
+                  {{#each pages}}
+                  <li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40">
+                    <a href="pages/{{ fileName }}" class="text-text-header-base block py-3.5 pl-8">{{ name }}</a>
+                  </li>
+                  {{/each}}
+                </ul>
+              </template>
             </li>
           </ul>
         </div>
@@ -106,6 +108,8 @@
     <footer></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    <script src="objects/dropdown-pages.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -8,15 +8,12 @@
 
 4) To check Tailwind version, run npm info tailwindcss version
 
-To dos:
-
-Mobile pressed no effect https://github.com/tailwindlabs/tailwindcss/discussions/1739\
+To dos:\
 Test on Firefox\
-Keyboard accessibility\
-when closing out of hamburger, collapse development dropdown\
-revisit canva color theory & add to colors documentation\
+Revisit canva color theory & add to colors documentation\
 
 Future imporvements:\
 Dark mode\
+Keyboard accessibility\
 Inclusive hiding\
 Move JS into a scripts folder

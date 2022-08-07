@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 20 Jul 2022 03:53:35 GMT
+ * Generated on Sun, 07 Aug 2022 03:06:51 GMT
  */
 
 module.exports = {
@@ -60,27 +60,23 @@ module.exports = {
   "color": {
     "background": {
       "page": {
-        "home": {
-          "value": "#fff8fc",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "#fff8fc"
-          },
-          "name": "ColorBackgroundPageHome",
-          "attributes": {
-            "category": "color",
-            "type": "background",
-            "item": "page",
-            "subitem": "home"
-          },
-          "path": [
-            "color",
-            "background",
-            "page",
-            "home"
-          ]
-        }
+        "value": "#fff8fc",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#fff8fc"
+        },
+        "name": "ColorBackgroundPage",
+        "attributes": {
+          "category": "color",
+          "type": "background",
+          "item": "page"
+        },
+        "path": [
+          "color",
+          "background",
+          "page"
+        ]
       },
       "menu": {
         "nav": {
@@ -288,6 +284,25 @@ module.exports = {
             "active"
           ]
         }
+      },
+      "accent": {
+        "value": "#4d55e1",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#4d55e1"
+        },
+        "name": "ColorIconAccent",
+        "attributes": {
+          "category": "color",
+          "type": "icon",
+          "item": "accent"
+        },
+        "path": [
+          "color",
+          "icon",
+          "accent"
+        ]
       }
     }
   },
