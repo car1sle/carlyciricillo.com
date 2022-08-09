@@ -52,6 +52,12 @@ $.each(dropdownPages.pages,function(){
     }
 });
 
+Handlebars.registerPartial(
+    'mobileDropBullet',
+    '<ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40"><a href="pages/{{ fileName }}" class="text-text-header-base block py-3.5 pl-8">{{ name }}</a></li>{{/each}}</ul>'
+);
+// https://codepen.io/SitePoint/pen/BNYZLK
+
 // Create dropdown lists with Handlebars
 // TODO: Make function
 let compiledDesktopDrop = Handlebars.compile(($('#dropdown-template')[0].innerHTML));

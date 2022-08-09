@@ -86,22 +86,14 @@
               </button>
               <!-- Begin mobile dropdown -->
               <div id="dropdown-container-mobile"></div>
-              <template id="dropdown-template-mobile">
-                <ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
-                  {{#each pages}}
-                  <li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40">
-                    <a href="pages/{{ fileName }}" class="text-text-header-base block py-3.5 pl-8">{{ name }}</a>
-                  </li>
-                  {{/each}}
-                </ul>
-              </template>
+              <script id="dropdown-template-mobile" type="text/x-handlebars-template">
+                {{> mobileDropBullet pages=pages fileName=fileName name=name}}
+              </script>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-
-    <!-- This page will be the About Me. Links to my: certificates, Github, Codepen, Yelp... Maybe quote the good feedback on my final projects for my certificates -->
 
     <main class="sm:flex max-w-5xl mx-auto">
       <div class="pt-20 sm:pt-28 basis-2/5">
