@@ -52,17 +52,19 @@ $.each(dropdownPages.pages,function(){
     }
 });
 
+// Handlebars partials
 Handlebars.registerPartial(
     'mobileDropBullet',
-    '<ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40"><a href="pages/{{ fileName }}" class="text-text-header-base block py-3.5 pl-8">{{ name }}</a></li>{{/each}}</ul>'
+    '<ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40"><a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a></li>{{/each}}</ul>'
 );
-// https://codepen.io/SitePoint/pen/BNYZLK
 
-// Create dropdown lists with Handlebars
-// TODO: Make function
-let compiledDesktopDrop = Handlebars.compile(($('#dropdown-template')[0].innerHTML));
-$('#dropdown-container')[0].innerHTML = compiledDesktopDrop(dropdownPages);
-let compiledMobileDrop = Handlebars.compile(($('#dropdown-template-mobile')[0].innerHTML));
-$('#dropdown-container-mobile')[0].innerHTML = compiledMobileDrop(dropdownPages);
+Handlebars.registerPartial(
+    'desktopDropBullet',
+    '<ul class="bg-background-menu-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-button-nav list-none overflow-hidden">{{#each pages}}<li class="font-sans text-base leading-none block text-right border-t-2 border-icon-header-base/40 first-of-type:border-0 hover:bg-icon-header-base/40 hover:border-background-menu-dropdown"><a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base hover:text-text-header-hover">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a></li>{{/each}}</ul>'
+);
+
+// Handlebars compilers
+$('#dropdown-container').append(Handlebars.compile($('#dropdown-template').html())(dropdownPages));
+$('#dropdown-container-mobile').append(Handlebars.compile($('#dropdown-template-mobile').html())(dropdownPages));
 
 });

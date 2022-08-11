@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 07 Aug 2022 18:26:44 GMT
+ * Generated on Thu, 11 Aug 2022 03:15:57 GMT
  */
 
 module.exports = {
@@ -174,28 +174,45 @@ module.exports = {
       }
     },
     "text": {
-      "header": {
-        "base": {
-          "value": "#141414",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "#141414"
-          },
-          "name": "ColorTextHeaderBase",
-          "attributes": {
-            "category": "color",
-            "type": "text",
-            "item": "header",
-            "subitem": "base"
-          },
-          "path": [
-            "color",
-            "text",
-            "header",
-            "base"
-          ]
+      "base": {
+        "value": "#141414",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#141414"
         },
+        "name": "ColorTextBase",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "base"
+        },
+        "path": [
+          "color",
+          "text",
+          "base"
+        ]
+      },
+      "accent": {
+        "value": "#4d55e1",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#4d55e1"
+        },
+        "name": "ColorTextAccent",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "accent"
+        },
+        "path": [
+          "color",
+          "text",
+          "accent"
+        ]
+      },
+      "header": {
         "active": {
           "value": "#141414",
           "filePath": "tokens.json",
