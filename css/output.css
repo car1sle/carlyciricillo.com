@@ -832,8 +832,8 @@ video {
   padding-top: 5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pl-8 {
@@ -913,12 +913,12 @@ video {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.text-icon-accent {
+.text-text-accent {
   --tw-text-opacity: 1;
   color: rgb(77 85 225 / var(--tw-text-opacity));
 }
 
-.text-text-accent {
+.text-icon-accent {
   --tw-text-opacity: 1;
   color: rgb(77 85 225 / var(--tw-text-opacity));
 }
@@ -991,6 +991,11 @@ video {
     margin-right: 2rem;
   }
 
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:ml-0 {
     margin-left: 0px;
   }
@@ -1009,6 +1014,10 @@ video {
 
   .sm\:h-16 {
     height: 4rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:pt-28 {
