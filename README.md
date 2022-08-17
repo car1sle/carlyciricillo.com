@@ -9,6 +9,7 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
+Move icons into figma tokens: https://medium.com/@danhollick/a-designers-guide-to-the-figma-api-3a23a3f93d2\
 Test on Firefox\
 Revisit canva color theory & add to colors documentation
 

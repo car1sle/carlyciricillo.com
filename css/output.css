@@ -832,10 +832,6 @@ video {
   padding-top: 5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
 }
@@ -996,10 +992,6 @@ video {
     margin-right: 0px;
   }
 
-  .sm\:ml-0 {
-    margin-left: 0px;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -1014,10 +1006,6 @@ video {
 
   .sm\:h-16 {
     height: 4rem;
-  }
-
-  .sm\:w-full {
-    width: 100%;
   }
 
   .sm\:pt-28 {

@@ -70,7 +70,7 @@ async function figmaFileFetch(fileId) {
     return tokensMegaObj
 }
 
-// Write tokensMegaObj in tokens.json
+// Write tokensMegaObj in tokens.json and put it on localhost
 app.use('/', async function (req, res, next) {
     let result = await figmaFileFetch(FigmaFileID).catch(error => console.log(error))
     fs.writeFileSync("tokens.json", JSON.stringify(result))
@@ -102,7 +102,6 @@ const iterate = (obj) => {
 }
 
 function tokensFromPage(figmaFileStruct, pageName){
-
     return figmaFileStruct.document.children
     .filter(child => child.type === 'CANVAS' && child.name === pageName)[0].children
     .filter(child => child.type === 'FRAME' && child.name === 'Tokens')[0].children
@@ -113,5 +112,4 @@ function tokensFromPage(figmaFileStruct, pageName){
         }
     })
     .map(tokens => tokens.children)
-    
 }
