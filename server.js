@@ -18,13 +18,7 @@ async function figmaFileFetch(fileId) {
     })
 
     let figmaFileStruct = await result.json()
-
-    let figmaTokens = []
-    let tokenNames = []
-    let tokenValues = []
-    let tokensObj = {}
-    let tokensArray = []
-    let tokensMegaObj = {}
+    let figmaTokens = [], tokenNames = [], tokenValues = [], tokensObj = {}, tokensArray = [], tokensMegaObj = {}
     
     // For each page of Figma tokens, add a new push with the page name as the second argument
     // Create an array of objects where each object is a Token layer from the Tokens frame in Figma

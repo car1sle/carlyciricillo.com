@@ -9,12 +9,11 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
-Move icons into figma tokens: https://medium.com/@danhollick/a-designers-guide-to-the-figma-api-3a23a3f93d2\
+Skills slider: https://codepen.io/Bjornros/pen/XWzpXbO\
+404 page\
 Test on Firefox\
-Revisit canva color theory & add to colors documentation
 
 Future imporvements:\
 Dark mode\
 Keyboard accessibility\
 Inclusive hiding\
-Move JS into a scripts folder
