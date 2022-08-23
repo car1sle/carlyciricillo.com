@@ -16,7 +16,7 @@ class IconCarousel {
                 // calculate scroll visible
                 this.scrollVisible = this._setScrollVisible();
                 // show all
-                // this._disableScrollIcons([]);
+                this._disableScrollIcons([]);
             });
         };
         this._slide = (direction, scrollValue) => {
@@ -28,37 +28,37 @@ class IconCarousel {
                 this.scrollPosition = scrollLeft;
             }
             // toggle scroll icons
-            // if (this.scrollPosition == 0) {
-            //     this._disableScrollIcons(["left"]);
-            // }
-            // else if (scrollLeft >= this.scrollVisible) {
-            //     this._disableScrollIcons(["right"]);
-            // }
-            // else {
-            //     // show all
-            //     this._disableScrollIcons([]);
-            // }
+            if (this.scrollPosition == 0) {
+                this._disableScrollIcons(["left"]);
+            }
+            else if (scrollLeft >= this.scrollVisible) {
+                this._disableScrollIcons(["right"]);
+            }
+            else {
+                // show all
+                this._disableScrollIcons([]);
+            }
             // move carousel
             this.scroller.animate({ scrollLeft: scrollLeft });
         };
         // disable scroll buttons
-        // this._disableScrollIcons = (direction) => {
-        //     if (direction.length === 0) {
-        //         this.controlLeft.css("display", "block");
-        //         this.controlRight.css("display", "block");
-        //     }
-        //     else {
-        //         // disable carousel navigation
-        //         for (let i = 0, len = direction.length; i < len; i++) {
-        //             if (direction[i] === "left") {
-        //                 this.controlLeft.fadeOut();
-        //             }
-        //             if (direction[i] === "right") {
-        //                 this.controlRight.fadeOut();
-        //             }
-        //         }
-        //     }
-        // };
+        this._disableScrollIcons = (direction) => {
+            if (direction.length === 0) {
+                this.controlLeft.css("opacity", "1");
+                this.controlRight.css("opacity", "1");
+            }
+            else {
+                // disable carousel navigation
+                for (let i = 0, len = direction.length; i < len; i++) {
+                    if (direction[i] === "left") {
+                        this.controlLeft.css("opacity", "0.4");
+                    }
+                    if (direction[i] === "right") {
+                        this.controlRight.css("opacity", "0.4");
+                    }
+                }
+            }
+        };
         // get max scroll position
         this._getMaxScroll = () => {
             return this.container.find(".icon-container").length * this.cardWidth;

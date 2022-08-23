@@ -9,7 +9,7 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
-Skills slider: disable arrows, handlebars
+Skills slider: handlebars\
 404 page\
 Test on Firefox\
 
