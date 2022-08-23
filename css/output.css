@@ -895,6 +895,42 @@ video {
   background-image: url('/img/arrow-right.png');
 }
 
+.bg-\[url\(\"\{\{icon\}\}\"\)\] {
+  background-image: url("{{icon}}");
+}
+
+.bg-\[url\(\"\\\{\{icon\}\}\"\)\] {
+  background-image: url("\{{icon}}");
+}
+
+.bg-\[url\(\"\{\{\{icon\}\}\}\"\)\] {
+  background-image: url("{{{icon}}}");
+}
+
+.bg-\[url\(\"\/img\/\{\{icon\}\}\"\)\] {
+  background-image: url("/img/{{icon}}");
+}
+
+.bg-\[url\(\"\\\/img\\\/\{\{icon\}\}\"\)\] {
+  background-image: url("\/img\/{{icon}}");
+}
+
+.bg-\[url\(\'\\\/img\\\/\{\{icon\}\}\'\)\] {
+  background-image: url('\/img\/{{icon}}');
+}
+
+.bg-\[url\(\"\{\{\[icon\]\}\}\"\)\] {
+  background-image: url("{{[icon]}}");
+}
+
+.bg-\[url\(\"\/img\/\{\{name\}\}\.png\"\)\] {
+  background-image: url("/img/{{name}}.png");
+}
+
+.bg-\[url\(\"\\\/img\\\/\{\{name\}\}\.png\"\)\] {
+  background-image: url("\/img\/{{name}}.png");
+}
+
 .bg-contain {
   background-size: contain;
 }

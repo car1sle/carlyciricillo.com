@@ -103,87 +103,15 @@
       </div>
       <div class="w-11/12 mx-auto pt-10 md:pt-16">
         <p class="mx-auto text-lg md:text-base text-text-base underline underline-offset-2 text-center">My Top Skills</p>
-        <!-- Begin skills carousel . Add jquery, Golang, Ampscript -->
+        <!-- Begin skills carousel -->
         <div id="skills-icon-carousel" class="mt-6 w-full">
           <div class="inline-block w-[30px] carousel-control">
             <i class="left opacity-40 block w-5 h-[25px] bg-no-repeat bg-contain bg-center my-0 mx-auto bg-[url('/img/arrow-left.png')]"></i>
           </div>
-          <div class="icon-carousel-outer w-[calc(100%-70px)] inline-block align-middle overflow-auto">
-            <ul class="icon-carousel-container list-none m-0 p-0">
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/HTML5.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">HTML5</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/CSS3.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">CSS3</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/JS.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">JavaScript</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Git.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Git</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Github.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <i class=" water-line"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Github</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Handlebars.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Handlebars</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Tailwind.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Tailwind</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Figma.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Figma</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Sketch.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Sketch</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Photoshop.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Photoshop</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Litmus.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Litmus</span>
-                </div>
-              </li>
-              <li class="icon-container float-left overflow-hidden">
-                <div class="icon w-[75px] h-[85px] box-border m-0">
-                  <i class="block my-0 mx-auto bg-[url('/img/Confluence.png')] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i>
-                  <span class="block font-sans text-xs text-center mt-2.5">Confluence</span>
-                </div>
-              </li>
-            </ul>
+          <div id="skills-container" class="icon-carousel-outer w-[calc(100%-70px)] inline-block align-middle overflow-auto">
+            <script id="skills-template" type="text/x-handlebars-template">
+              {{> skillsBullet skills=skills name=name icon=icon}}
+            </script>
           </div>
           <div class="inline-block w-[30px] carousel-control">
             <i class="right block w-5 h-[25px] bg-no-repeat bg-contain bg-center my-0 mx-auto bg-[url('/img/arrow-right.png')]"></i>
@@ -201,6 +129,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
     <script src="objects/dropdown-pages.js"></script>
+    <script src="objects/skills.js"></script>
     <script src="index.js"></script>
     <script src="scripts/skills-carousel.js"></script>
   </body>

@@ -1,4 +1,12 @@
 "use strict";
+
+// Handlbears partial & compiler
+Handlebars.registerPartial(
+    'skillsBullet',
+    '<ul class="icon-carousel-container list-none m-0 p-0">{{#each skills}}<li class="icon-container float-left overflow-hidden"><div class="icon w-[75px] h-[85px] box-border m-0"><i class="block my-0 mx-auto bg-[url("{{icon}}")] bg-contain bg-no-repeat bg-center h-[45px] w-10"></i><span class="block font-sans text-xs text-center mt-2.5">{{name}}</span></div></li>{{/each}}</ul>'
+);
+$('#skills-container').append(Handlebars.compile($('#skills-template').html())(mySkills));
+
 class IconCarousel {
     constructor(scrollerTarget) {
         this.scrollerTarget = scrollerTarget;
