@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 24 Aug 2022 02:08:14 GMT
+ * Generated on Wed, 24 Aug 2022 02:48:14 GMT
  */
 
 module.exports = {
@@ -301,6 +301,25 @@ module.exports = {
             "active"
           ]
         }
+      },
+      "base": {
+        "value": "#636363",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#636363"
+        },
+        "name": "ColorIconBase",
+        "attributes": {
+          "category": "color",
+          "type": "icon",
+          "item": "base"
+        },
+        "path": [
+          "color",
+          "icon",
+          "base"
+        ]
       },
       "accent": {
         "value": "#4d55e1",
