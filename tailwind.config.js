@@ -46,6 +46,8 @@ module.exports = {
   	'index.html',
     'index.js',
     'pages/*.html',
+    'scripts/*.js',
+    'objects/*.js',
   ],
   theme: {
     colors: sdColorTokens,
