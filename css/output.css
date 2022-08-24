@@ -574,21 +574,15 @@ video {
   }
 }
 
+@media (min-width: 880px) {
+  .container {
+    max-width: 880px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -646,6 +640,10 @@ video {
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-4 {
@@ -740,20 +738,20 @@ video {
   width: calc(100% - 70px);
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-\[75px\] {
   width: 75px;
 }
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .max-w-5xl {
@@ -861,20 +859,72 @@ video {
   background-image: url('/img/arrow-left.png');
 }
 
+.bg-\[url\(\'\/img\/HTML5\.png\'\)\] {
+  background-image: url('/img/HTML5.png');
+}
+
+.bg-\[url\(\'\/img\/CSS3\.png\'\)\] {
+  background-image: url('/img/CSS3.png');
+}
+
+.bg-\[url\(\'\/img\/JS\.png\'\)\] {
+  background-image: url('/img/JS.png');
+}
+
+.bg-\[url\(\'\/img\/Git\.png\'\)\] {
+  background-image: url('/img/Git.png');
+}
+
+.bg-\[url\(\'\/img\/Github\.png\'\)\] {
+  background-image: url('/img/Github.png');
+}
+
+.bg-\[url\(\'\/img\/Golang\.png\'\)\] {
+  background-image: url('/img/Golang.png');
+}
+
+.bg-\[url\(\'\/img\/Handlebars\.png\'\)\] {
+  background-image: url('/img/Handlebars.png');
+}
+
+.bg-\[url\(\'\/img\/Tailwind\.png\'\)\] {
+  background-image: url('/img/Tailwind.png');
+}
+
+.bg-\[url\(\'\/img\/jQuery\.png\'\)\] {
+  background-image: url('/img/jQuery.png');
+}
+
+.bg-\[url\(\'\/img\/Figma\.png\'\)\] {
+  background-image: url('/img/Figma.png');
+}
+
+.bg-\[url\(\'\/img\/Sketch\.png\'\)\] {
+  background-image: url('/img/Sketch.png');
+}
+
+.bg-\[url\(\'\/img\/Photoshop\.png\'\)\] {
+  background-image: url('/img/Photoshop.png');
+}
+
+.bg-\[url\(\'\/img\/Confluence\.png\'\)\] {
+  background-image: url('/img/Confluence.png');
+}
+
+.bg-\[url\(\'\/img\/Litmus\.png\'\)\] {
+  background-image: url('/img/Litmus.png');
+}
+
+.bg-\[url\(\'\/img\/Salesforce\.png\'\)\] {
+  background-image: url('/img/Salesforce.png');
+}
+
+.bg-\[url\(\'\/img\/Wrike\.png\'\)\] {
+  background-image: url('/img/Wrike.png');
+}
+
 .bg-\[url\(\'\/img\/arrow-right\.png\'\)\] {
   background-image: url('/img/arrow-right.png');
-}
-
-.bg-\[url\(\\\'\{\{icon\}\}\\\'\)\] {
-  background-image: url(\'{{icon}}\');
-}
-
-.bg-\[url\(\'\{\{icon\}\}\'\)\] {
-  background-image: url('{{icon}}');
-}
-
-.bg-\[url\(\\\"\{\{icon\}\}\\\"\)\] {
-  background-image: url(\"{{icon}}\");
 }
 
 .bg-contain {
@@ -1186,8 +1236,8 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pt-16 {
-    padding-top: 4rem;
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
 
   .md\:text-base {
@@ -1200,8 +1250,18 @@ video {
   }
 }
 
+@media (min-width: 880px) {
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mt-6 {
+    margin-top: 1.5rem;
+  }
+}
+
 @media (min-width: 1024px) {
-  .lg\:ml-9 {
+  .xl\:ml-9 {
     margin-left: 2.25rem;
   }
 }

@@ -53,8 +53,14 @@ module.exports = {
     colors: sdColorTokens,
     fontFamily: sdFontFamilyTokens,
     borderRadius: sdBorderTokens,
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '880px',
+      'xl': '1024px',
+    },
     // nest token objs within the extend obj to
-    // add more colors while keeping the defaults
+    // add more tokens while keeping the defaults?
     extend: {},
   },
   plugins: [],
