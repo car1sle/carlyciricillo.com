@@ -9,8 +9,9 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
-404 page\
+Favicon\
 Test on Firefox\
+About me shouldn't be the homepage?\
 
 Future imporvements:\
 Dark mode\

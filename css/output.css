@@ -959,11 +959,11 @@ video {
   stroke: #969696;
 }
 
-.stroke-icon-header-active {
+.stroke-icon-base {
   stroke: #636363;
 }
 
-.stroke-icon-base {
+.stroke-icon-header-active {
   stroke: #636363;
 }
 
@@ -1110,24 +1110,12 @@ video {
   line-height: 1;
 }
 
-.leading-\[45px\] {
-  line-height: 45px;
-}
-
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
 .leading-6 {
   line-height: 1.5rem;
 }
 
-.leading-5 {
-  line-height: 1.25rem;
+.leading-\[45px\] {
+  line-height: 45px;
 }
 
 .text-text-base {
