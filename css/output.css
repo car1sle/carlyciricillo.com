@@ -810,6 +810,14 @@ video {
   gap: 0px;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -869,6 +877,11 @@ video {
 .bg-background-menu-dropdown {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 240 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/img\/arrow-left\.png\'\)\] {
@@ -1130,12 +1143,12 @@ video {
 
 .text-text-accent {
   --tw-text-opacity: 1;
-  color: rgb(77 85 225 / var(--tw-text-opacity));
+  color: rgb(8 85 194 / var(--tw-text-opacity));
 }
 
 .text-icon-accent {
   --tw-text-opacity: 1;
-  color: rgb(77 85 225 / var(--tw-text-opacity));
+  color: rgb(8 85 194 / var(--tw-text-opacity));
 }
 
 .underline {

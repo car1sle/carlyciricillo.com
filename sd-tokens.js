@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 30 Aug 2022 03:17:40 GMT
+ * Generated on Wed, 31 Aug 2022 03:00:12 GMT
  */
 
 module.exports = {
@@ -194,11 +194,11 @@ module.exports = {
         ]
       },
       "accent": {
-        "value": "#4d55e1",
+        "value": "#0855c2",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#4d55e1"
+          "value": "#0855c2"
         },
         "name": "ColorTextAccent",
         "attributes": {
@@ -322,11 +322,11 @@ module.exports = {
         ]
       },
       "accent": {
-        "value": "#4d55e1",
+        "value": "#0855c2",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#4d55e1"
+          "value": "#0855c2"
         },
         "name": "ColorIconAccent",
         "attributes": {

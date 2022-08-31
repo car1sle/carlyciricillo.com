@@ -12,6 +12,7 @@ To dos:\
 Favicon\
 Test on Firefox\
 About me shouldn't be the homepage?\
+Sitemap\ -- site crawlers out that there that generate a sitemap for you, then you can just uploade
 
 Future imporvements:\
 Dark mode\
