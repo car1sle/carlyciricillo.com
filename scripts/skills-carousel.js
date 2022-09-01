@@ -46,16 +46,20 @@ class IconCarousel {
         this._disableScrollIcons = (direction) => {
             if (direction.length === 0) {
                 this.controlLeft.css("opacity", "1");
+                this.controlLeft.css("cursor", "pointer");
                 this.controlRight.css("opacity", "1");
+                this.controlRight.css("cursor", "pointer");
             }
             else {
                 // disable carousel navigation
                 for (let i = 0, len = direction.length; i < len; i++) {
                     if (direction[i] === "left") {
                         this.controlLeft.css("opacity", "0.4");
+                        this.controlLeft.css("cursor", "default");
                     }
                     if (direction[i] === "right") {
                         this.controlRight.css("opacity", "0.4");
+                        this.controlRight.css("cursor", "default");
                     }
                 }
             }

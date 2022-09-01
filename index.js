@@ -10,7 +10,7 @@ $('#mobile-menu-button').click(function(){
 // Toggle mobile menu dropdown
 $('#mobile-menu-dropdown-button').click(function(){
     $('#mobile-menu-dropdown').toggleClass('hidden');
-    $(this).toggleClass('bg-background-menu-dropdown');
+    $(this).toggleClass('bg-background-dropdown');
     $('svg#chevron-closed').toggleClass('hidden');
     $('svg#chevron-open').toggleClass('hidden');
 })
@@ -24,7 +24,7 @@ $(window).on('resize', function(){
     }
     if ($(this).width() >= 640 && !$('#mobile-menu-dropdown').hasClass('hidden')){
         $('#mobile-menu-dropdown').addClass('hidden');
-        $('#mobile-menu-dropdown-button').removeClass('bg-background-menu-dropdown');
+        $('#mobile-menu-dropdown-button').removeClass('bg-background-dropdown');
         $('svg#chevron-closed').removeClass('hidden');
         $('svg#chevron-open').addClass('hidden');
     }
@@ -37,7 +37,7 @@ $(document).on('click', function(event){
         $('svg#mobile-menu-button-closed').removeClass('hidden');
         $('svg#mobile-menu-button-open').addClass('hidden');
         $('#mobile-menu-dropdown').addClass('hidden');
-        $('#mobile-menu-dropdown-button').removeClass('bg-background-menu-dropdown');
+        $('#mobile-menu-dropdown-button').removeClass('bg-background-dropdown');
         $('svg#chevron-closed').removeClass('hidden');
         $('svg#chevron-open').addClass('hidden');
     }
@@ -55,12 +55,12 @@ $.each(dropdownPages.pages,function(){
 // Handlebars partials
 Handlebars.registerPartial(
     'mobileDropBullet',
-    '<ul class="hidden bg-background-menu-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40"><a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a></li>{{/each}}</ul>'
+    '<ul class="hidden bg-background-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-icon-header-base/40"><a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a></li>{{/each}}</ul>'
 );
 
 Handlebars.registerPartial(
     'desktopDropBullet',
-    '<ul class="bg-background-menu-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-button-nav list-none overflow-hidden">{{#each pages}}<li class="font-sans text-base leading-none block text-right border-t-2 border-icon-header-base/40 first-of-type:border-0 hover:bg-icon-header-base/40 hover:border-background-menu-dropdown"><a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base hover:text-text-header-hover">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a></li>{{/each}}</ul>'
+    '<ul class="bg-background-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-nav list-none overflow-hidden">{{#each pages}}<li class="font-sans text-base leading-none block text-right border-t-2 border-icon-header-base/40 first-of-type:border-0 hover:bg-icon-header-base/40 hover:border-background-dropdown"><a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base hover:text-text-header-hover">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a></li>{{/each}}</ul>'
 );
 
 // Handlebars compilers

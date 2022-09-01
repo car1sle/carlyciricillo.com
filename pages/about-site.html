@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/output.css"> <!-- Tailwind output CSS -->
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon shortcut" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
   </head>
   <body class="bg-background-page">
 
     <!-- Begin header -->
     <header class="sticky top-0 z-10">
-      <nav class="bg-background-menu-nav absolute w-full">
+      <nav class="bg-background-nav absolute w-full">
         <div class="mx-auto max-w-5xl">
           <div class="flex items-center justify-between h-14 sm:h-16 mx-5 sm:mx-8 relative">
             <!-- Begin mobile menu button -->
@@ -40,10 +41,10 @@
             <ul class="hidden sm:flex space-x-2 justify-end items-center overflow-hidden list-none my-0 p-0">
               <!-- Only using flex on lis to make border radius match? -->
               <li class="flex">
-                <a href="../" class="font-sans text-base leading-none text-text-base px-3.5 py-2.5 rounded-radius-button-nav hover:bg-background-button-nav-hover hover:text-text-header-hover">About Me</a>
+                <a href="../" class="font-sans text-base leading-none text-text-base px-3.5 py-2.5 rounded-radius-nav hover:bg-background-button-hover hover:text-text-header-hover">About Me</a>
               </li>
               <li class="overflow-hidden group">
-                <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-base px-3.5 py-2.5 rounded-radius-button-nav bg-background-button-nav-active group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover">
+                <button class="flex items-center gap-0.5 font-sans text-base leading-none text-text-base px-3.5 py-2.5 rounded-radius-nav bg-background-button-active group-hover:bg-background-button-hover group-hover:text-text-header-hover">
                   Projects
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-active group-hover:stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -63,11 +64,11 @@
         <!-- Begin mobile menu, show/hide based on menu mobile-menu-button click -->
         <div class="hidden sm:hidden" id="mobile-menu">
           <ul class="px-2 pt-2 pb-3 m-0 space-y-1 list-none">
-            <li class="block font-sans text-lg leading-none px-4 rounded-radius-button-nav hover:bg-background-button-nav-hover">
+            <li class="block font-sans text-lg leading-none px-4 rounded-radius-nav hover:bg-background-button-hover">
               <a href="../" class="text-text-base hover:text-text-header-hover block py-3.5">About Me</a>
             </li>
-            <li class="block overflow-hidden group rounded-radius-button-nav">
-              <button class="w-full flex items-center gap-0.5 font-sans text-lg leading-none text-text-base px-4 py-3.5 group-hover:bg-background-button-nav-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button" aria-controls="mobile-menu-dropdown" aria-expanded="false">
+            <li class="block overflow-hidden group rounded-radius-nav">
+              <button class="w-full flex items-center gap-0.5 font-sans text-lg leading-none text-text-base px-4 py-3.5 group-hover:bg-background-button-hover group-hover:text-text-header-hover" id="mobile-menu-dropdown-button" aria-controls="mobile-menu-dropdown" aria-expanded="false">
                 Projects
                 <!-- Chevron when dropdown is closed -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-icon-header-base" fill="none" viewBox="0 0 24 24" stroke-width="4" id="chevron-closed">

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 31 Aug 2022 03:00:12 GMT
+ * Generated on Thu, 01 Sep 2022 04:10:04 GMT
  */
 
 module.exports = {
@@ -78,98 +78,86 @@ module.exports = {
           "page"
         ]
       },
-      "menu": {
-        "nav": {
-          "value": "#ffc3e2",
+      "nav": {
+        "value": "#ffc3e2",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#ffc3e2"
+        },
+        "name": "ColorBackgroundNav",
+        "attributes": {
+          "category": "color",
+          "type": "background",
+          "item": "nav"
+        },
+        "path": [
+          "color",
+          "background",
+          "nav"
+        ]
+      },
+      "dropdown": {
+        "value": "#fee2f0",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#fee2f0"
+        },
+        "name": "ColorBackgroundDropdown",
+        "attributes": {
+          "category": "color",
+          "type": "background",
+          "item": "dropdown"
+        },
+        "path": [
+          "color",
+          "background",
+          "dropdown"
+        ]
+      },
+      "button": {
+        "active": {
+          "value": "#f5acd2",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
-            "value": "#ffc3e2"
+            "value": "#F5ACD2"
           },
-          "name": "ColorBackgroundMenuNav",
+          "name": "ColorBackgroundButtonActive",
           "attributes": {
             "category": "color",
             "type": "background",
-            "item": "menu",
-            "subitem": "nav"
+            "item": "button",
+            "subitem": "active"
           },
           "path": [
             "color",
             "background",
-            "menu",
-            "nav"
+            "button",
+            "active"
           ]
         },
-        "dropdown": {
+        "hover": {
           "value": "#fee2f0",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
             "value": "#fee2f0"
           },
-          "name": "ColorBackgroundMenuDropdown",
+          "name": "ColorBackgroundButtonHover",
           "attributes": {
             "category": "color",
             "type": "background",
-            "item": "menu",
-            "subitem": "dropdown"
+            "item": "button",
+            "subitem": "hover"
           },
           "path": [
             "color",
             "background",
-            "menu",
-            "dropdown"
+            "button",
+            "hover"
           ]
-        }
-      },
-      "button": {
-        "nav": {
-          "active": {
-            "value": "#f5acd2",
-            "filePath": "tokens.json",
-            "isSource": true,
-            "original": {
-              "value": "#F5ACD2"
-            },
-            "name": "ColorBackgroundButtonNavActive",
-            "attributes": {
-              "category": "color",
-              "type": "background",
-              "item": "button",
-              "subitem": "nav",
-              "state": "active"
-            },
-            "path": [
-              "color",
-              "background",
-              "button",
-              "nav",
-              "active"
-            ]
-          },
-          "hover": {
-            "value": "#fee2f0",
-            "filePath": "tokens.json",
-            "isSource": true,
-            "original": {
-              "value": "#fee2f0"
-            },
-            "name": "ColorBackgroundButtonNavHover",
-            "attributes": {
-              "category": "color",
-              "type": "background",
-              "item": "button",
-              "subitem": "nav",
-              "state": "hover"
-            },
-            "path": [
-              "color",
-              "background",
-              "button",
-              "nav",
-              "hover"
-            ]
-          }
         }
       }
     },
@@ -344,28 +332,43 @@ module.exports = {
   },
   "border": {
     "radius": {
-      "button": {
-        "nav": {
-          "value": "4px",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "4px"
-          },
-          "name": "BorderRadiusButtonNav",
-          "attributes": {
-            "category": "border",
-            "type": "radius",
-            "item": "button",
-            "subitem": "nav"
-          },
-          "path": [
-            "border",
-            "radius",
-            "button",
-            "nav"
-          ]
-        }
+      "nav": {
+        "value": "4px",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "4px"
+        },
+        "name": "BorderRadiusNav",
+        "attributes": {
+          "category": "border",
+          "type": "radius",
+          "item": "nav"
+        },
+        "path": [
+          "border",
+          "radius",
+          "nav"
+        ]
+      },
+      "card": {
+        "value": "10px",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "10px"
+        },
+        "name": "BorderRadiusCard",
+        "attributes": {
+          "category": "border",
+          "type": "radius",
+          "item": "card"
+        },
+        "path": [
+          "border",
+          "radius",
+          "card"
+        ]
       }
     }
   }
