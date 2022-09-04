@@ -9,12 +9,14 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
-Change favicon for dark vs light mode? (https://stackoverflow.com/questions/59233531/safari-favicon-incorrectly-rendering-with-white-background // look @ tailwind dark mode documentation)\
+Wider creds cards on phone, Link creds cards\
+Fallback font stacks\
 Test on Firefox\
 About me shouldn't be the homepage?\
 Sitemap (site crawlers out that there that generate a sitemap for you, then you can just upload)\
 
 Future imporvements:\
 Dark mode\
+Change favicon for dark vs light mode? (https://stackoverflow.com/questions/59233531/safari-favicon-incorrectly-rendering-with-white-background // look @ tailwind dark mode documentation)\
 Keyboard accessibility\
 Inclusive hiding\
