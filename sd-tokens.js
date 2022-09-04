@@ -1,16 +1,16 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Sep 2022 02:06:40 GMT
+ * Generated on Sun, 04 Sep 2022 05:03:42 GMT
  */
 
 module.exports = {
   "fontFamily": {
     "sans": {
-      "value": "Roboto",
+      "value": "Roboto, sans-serif",
       "filePath": "tokens.json",
       "isSource": true,
       "original": {
-        "value": "Roboto"
+        "value": "Roboto, sans-serif"
       },
       "name": "FontFamilySans",
       "attributes": {
@@ -23,11 +23,11 @@ module.exports = {
       ]
     },
     "mono": {
-      "value": "Roboto Mono",
+      "value": "Roboto Mono, monospace",
       "filePath": "tokens.json",
       "isSource": true,
       "original": {
-        "value": "Roboto Mono"
+        "value": "Roboto Mono, monospace"
       },
       "name": "FontFamilyMono",
       "attributes": {
@@ -40,11 +40,11 @@ module.exports = {
       ]
     },
     "cursive": {
-      "value": "Pacifico",
+      "value": "Pacifico, cursive",
       "filePath": "tokens.json",
       "isSource": true,
       "original": {
-        "value": "Pacifico"
+        "value": "Pacifico, cursive"
       },
       "name": "FontFamilyCursive",
       "attributes": {

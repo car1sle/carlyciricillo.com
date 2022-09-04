@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   /* 4 */
 }
 
@@ -123,7 +123,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: Roboto Mono;
+  font-family: Roboto Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -562,6 +562,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 550px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -651,8 +657,8 @@ video {
   margin-top: 0px;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-6 {
@@ -1109,11 +1115,11 @@ video {
 }
 
 .font-cursive {
-  font-family: Pacifico;
+  font-family: Pacifico, cursive;
 }
 
 .font-sans {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 .text-2xl {
@@ -1158,10 +1164,6 @@ video {
   line-height: 1;
 }
 
-.leading-6 {
-  line-height: 1.5rem;
-}
-
 .leading-\[45px\] {
   line-height: 45px;
 }
@@ -1179,6 +1181,11 @@ video {
 .text-text-accent {
   --tw-text-opacity: 1;
   color: rgb(8 85 194 / var(--tw-text-opacity));
+}
+
+.text-icon-base {
+  --tw-text-opacity: 1;
+  color: rgb(99 99 99 / var(--tw-text-opacity));
 }
 
 .text-icon-accent {
@@ -1282,6 +1289,22 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+@media (min-width: 550px) {
+  .xs\:basis-\[48\%\] {
+    flex-basis: 48%;
+  }
+
+  .xs\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:mx-8 {
     margin-left: 2rem;
@@ -1375,8 +1398,8 @@ video {
 }
 
 @media (min-width: 880px) {
-  .lg\:mt-3 {
-    margin-top: 0.75rem;
+  .lg\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .lg\:mt-6 {

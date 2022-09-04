@@ -9,8 +9,7 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
-Wider creds cards on phone, Link creds cards\
-Fallback font stacks\
+Create text color for gray years in creds cards\
 Test on Firefox\
 About me shouldn't be the homepage?\
 Sitemap (site crawlers out that there that generate a sitemap for you, then you can just upload)\

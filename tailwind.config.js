@@ -55,6 +55,7 @@ module.exports = {
     fontFamily: sdFontFamilyTokens,
     borderRadius: sdBorderTokens,
     screens: {
+      'xs': '550px',
       'sm': '640px',
       'md': '768px',
       'lg': '880px',
