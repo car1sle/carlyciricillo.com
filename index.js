@@ -63,8 +63,14 @@ Handlebars.registerPartial(
     '<ul class="bg-background-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-nav list-none overflow-hidden">{{#each pages}}<li class="font-sans text-base leading-none block text-right border-t-2 border-icon-header-base/40 first-of-type:border-0 hover:bg-icon-header-base/40 hover:border-background-dropdown"><a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base hover:text-text-header-hover">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a></li>{{/each}}</ul>'
 );
 
+Handlebars.registerPartial(
+    'footer',
+    '<footer class="w-11/12 mx-auto my-8"><p class="text-sm pt-3 border-t-[1px]">&#169; Copyright 2022 Carly Ciricillo</p><ul class="flex list-none my-3">{{#each icons}}<li class="pr-4"><a target="_blank" href="{{ url }}"><img width="25" src="{{ img }}" alt="{{ alt }}"></a></li>{{/each}}</ul></footer>'
+);
+
 // Handlebars compilers
 $('#dropdown-container').append(Handlebars.compile($('#dropdown-template').html())(dropdownPages));
 $('#dropdown-container-mobile').append(Handlebars.compile($('#dropdown-template-mobile').html())(dropdownPages));
+$('#footer-container').append(Handlebars.compile($('#footer-template').html())(socialIcons));
 
 });
