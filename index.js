@@ -65,7 +65,7 @@ Handlebars.registerPartial(
 
 Handlebars.registerPartial(
     'footer',
-    '<footer class="w-11/12 mx-auto my-8"><p class="text-sm pt-3 border-t-[1px]">&#169; Copyright 2022 Carly Ciricillo</p><ul class="flex list-none my-3">{{#each icons}}<li class="pr-4"><a target="_blank" href="{{ url }}"><img width="25" src="{{ img }}" alt="{{ alt }}"></a></li>{{/each}}</ul></footer>'
+    '<footer class="w-11/12 mx-auto mt-20 mb-8"><p class="text-sm pt-3 border-t-[1px] text-text-base border-text-base">&#169; Copyright 2022 Carly Ciricillo</p><ul class="flex list-none my-3">{{#each icons}}<li class="pr-4"><a target="_blank" href="{{ url }}"><img width="25" src="{{ img }}" alt="{{ alt }}"></a></li>{{/each}}</ul></footer>'
 );
 
 // Handlebars compilers

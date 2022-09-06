@@ -4,7 +4,7 @@
 
 2) In new tab run style-dictionary build, which builds the Style Dictionary tokens in sd-tokens.js. This builds them in the javascript/module format, exposing a CommonJS module to work with Tailwind's configuration
 
-3) Run npx tailwindcss -i css/input.css -o css/output.css --watch to: 1) scan HTML files for classes and build styles in ouput.css and 2) integrate the sd-tokens with Tailwind (output.css)
+3) Run npx tailwindcss -i css/input.css -o css/output.css --watch to: 1) scan designated files for classes and build styles in ouput.css and 2) integrate the sd-tokens with Tailwind (output.css)
 
 4) To check Tailwind version, run npm info tailwindcss version
 
