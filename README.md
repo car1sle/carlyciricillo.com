@@ -9,6 +9,7 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
+Still widen creds cards on mobile? xs query not working? go full widdth instead?\
 Create text color for gray years in creds cards\
 Test on Firefox\
 About me shouldn't be the homepage?\

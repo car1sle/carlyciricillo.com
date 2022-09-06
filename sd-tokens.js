@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Sep 2022 05:03:42 GMT
+ * Generated on Tue, 06 Sep 2022 00:36:35 GMT
  */
 
 module.exports = {
@@ -198,6 +198,25 @@ module.exports = {
           "color",
           "text",
           "accent"
+        ]
+      },
+      "small": {
+        "value": "#636363",
+        "filePath": "tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#636363"
+        },
+        "name": "ColorTextSmall",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "small"
+        },
+        "path": [
+          "color",
+          "text",
+          "small"
         ]
       },
       "header": {
