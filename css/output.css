@@ -954,6 +954,18 @@ video {
   background-image: url('/img/JS.png');
 }
 
+.bg-\[url\(\'\/img\/jQuery\.png\'\)\] {
+  background-image: url('/img/jQuery.png');
+}
+
+.bg-\[url\(\'\/img\/React\.png\'\)\] {
+  background-image: url('/img/React.png');
+}
+
+.bg-\[url\(\'\/img\/Golang\.png\'\)\] {
+  background-image: url('/img/Golang.png');
+}
+
 .bg-\[url\(\'\/img\/Git\.png\'\)\] {
   background-image: url('/img/Git.png');
 }
@@ -962,20 +974,16 @@ video {
   background-image: url('/img/Github.png');
 }
 
-.bg-\[url\(\'\/img\/Golang\.png\'\)\] {
-  background-image: url('/img/Golang.png');
-}
-
 .bg-\[url\(\'\/img\/Handlebars\.png\'\)\] {
   background-image: url('/img/Handlebars.png');
 }
 
-.bg-\[url\(\'\/img\/Tailwind\.png\'\)\] {
-  background-image: url('/img/Tailwind.png');
+.bg-\[url\(\'\/img\/Redux\.png\'\)\] {
+  background-image: url('/img/Redux.png');
 }
 
-.bg-\[url\(\'\/img\/jQuery\.png\'\)\] {
-  background-image: url('/img/jQuery.png');
+.bg-\[url\(\'\/img\/Tailwind\.png\'\)\] {
+  background-image: url('/img/Tailwind.png');
 }
 
 .bg-\[url\(\'\/img\/Figma\.png\'\)\] {
