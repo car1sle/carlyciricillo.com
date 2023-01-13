@@ -14,6 +14,11 @@ const dropdownPages = {
             "name": "Lists.cm",
             "fileName": "lists.html",
             "currentPage": false
+        },
+        {
+            "name": "React",
+            "fileName": "react.html",
+            "currentPage": false
         }
     ]
 };
