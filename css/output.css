@@ -654,6 +654,11 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -696,14 +701,6 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mt-1\.5 {
-  margin-top: 0.375rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .box-border {
@@ -1201,16 +1198,12 @@ video {
   line-height: 1.75rem;
 }
 
-.leading-9 {
-  line-height: 2.25rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
-}
-
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
 }
 
 .text-text-base {

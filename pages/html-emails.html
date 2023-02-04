@@ -91,10 +91,8 @@
     </header>
 
     <main class="w-11/12 md:w-full md:max-w-3xl mx-auto pt-20 sm:pt-24 md:pt-28">
-      <p class="text-text-base mb-5 leading-7">I got my start in engineering through email development. I'm a pro at responsive email markup, but my specialty is email automation &mdash; At <a href="https://www.wunderkind.co/solutions/multichannel-for-retailers/" target="_blank" class="text-text-accent">Wunderkind</a>, I use JavaScript, Golang, Salesforce AMPscript and Responsys RPL to integrate user-personalized email content from our clients' ecommerce platforms and email service providers.</p>
-      <p class="text-text-base mb-5 leading-7">My plan for this page is to showcase my full HTML email portfolio, but for now please head to <a target="_blank" href="https://reallygoodemails.com/car1sle/submitted" class="text-text-accent">my Really Good Emails profile</a>! You can learn more about each email example by cliking the View email in the bottom right of the view modal, then going to the Info&nbsp;tab.</p>
-      <p class="text-text-base mb-5 leading-7">For the last two years at Wunderkind, my quarterly goals have been contributing to Wunderkind's proprietary internal email builder tool, a React app that will allow nondevs to easily build campaigns.</p>
-      <!-- https://carlyciricillo.media/carly-etc/litmus/interactive.html -->
+      <p class="text-text-base mb-5 leading-7">I specialize in responsive email markup and email automation. At <a href="https://www.wunderkind.co/solutions/multichannel-for-retailers/" target="_blank" class="text-text-accent">Wunderkind</a>, I use JavaScript, Golang, Salesforce AMPscript and Responsys RPL to integrate user-personalized email content from our clients' ecommerce platforms and email service providers. Check out some of my client work&nbsp;below!</p>
+      <div id="email-display-container" class="my-10"></div>
     </main>
     <!-- Check out overscroll-none -->
 
@@ -108,5 +106,10 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
     <script src="../scripts/sitewide-objs.js"></script>
     <script src="../index.js"></script>
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="../scripts/react-components/email-display.js" type="text/babel"></script>
   </body>
 </html>
