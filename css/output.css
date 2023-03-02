@@ -879,11 +879,6 @@ video {
   overflow: hidden;
 }
 
-.overscroll-none {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
-}
-
 .rounded-radius-nav {
   border-radius: 4px;
 }
