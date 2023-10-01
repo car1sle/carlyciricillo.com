@@ -47,6 +47,7 @@ module.exports = {
     'index.js',
     'pages/*.html',
     'scripts/*.js',
+    'scripts/**/*.js',
     'objects/*.js',
     '404.html',
   ],

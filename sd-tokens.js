@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 04 Feb 2023 03:21:15 GMT
+ * Generated on Sun, 01 Oct 2023 17:59:52 GMT
  */
 
 module.exports = {
@@ -60,11 +60,11 @@ module.exports = {
   "color": {
     "background": {
       "page": {
-        "value": "#fff8fc",
+        "value": "#fff5eb",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#fff8fc"
+          "value": "#FFF5EB"
         },
         "name": "ColorBackgroundPage",
         "attributes": {
@@ -79,11 +79,11 @@ module.exports = {
         ]
       },
       "nav": {
-        "value": "#ffc3e2",
+        "value": "#fb74a6",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#ffc3e2"
+          "value": "#FB74A6"
         },
         "name": "ColorBackgroundNav",
         "attributes": {
@@ -98,11 +98,11 @@ module.exports = {
         ]
       },
       "dropdown": {
-        "value": "#fee2f0",
+        "value": "#ead1c2",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#fee2f0"
+          "value": "#EAD1C2"
         },
         "name": "ColorBackgroundDropdown",
         "attributes": {
@@ -118,11 +118,11 @@ module.exports = {
       },
       "button": {
         "active": {
-          "value": "#f5acd2",
+          "value": "#fc9cbf",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
-            "value": "#F5ACD2"
+            "value": "#FC9CBF"
           },
           "name": "ColorBackgroundButtonActive",
           "attributes": {
@@ -139,11 +139,11 @@ module.exports = {
           ]
         },
         "hover": {
-          "value": "#fee2f0",
+          "value": "#ead1c2",
           "filePath": "tokens.json",
           "isSource": true,
           "original": {
-            "value": "#fee2f0"
+            "value": "#EAD1C2"
           },
           "name": "ColorBackgroundButtonHover",
           "attributes": {
@@ -163,11 +163,11 @@ module.exports = {
     },
     "text": {
       "base": {
-        "value": "#141414",
+        "value": "#000000",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#141414"
+          "value": "#000000"
         },
         "name": "ColorTextBase",
         "attributes": {
@@ -218,97 +218,9 @@ module.exports = {
           "text",
           "small"
         ]
-      },
-      "header": {
-        "active": {
-          "value": "#141414",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "#141414"
-          },
-          "name": "ColorTextHeaderActive",
-          "attributes": {
-            "category": "color",
-            "type": "text",
-            "item": "header",
-            "subitem": "active"
-          },
-          "path": [
-            "color",
-            "text",
-            "header",
-            "active"
-          ]
-        },
-        "hover": {
-          "value": "#000000",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "#000"
-          },
-          "name": "ColorTextHeaderHover",
-          "attributes": {
-            "category": "color",
-            "type": "text",
-            "item": "header",
-            "subitem": "hover"
-          },
-          "path": [
-            "color",
-            "text",
-            "header",
-            "hover"
-          ]
-        }
       }
     },
     "icon": {
-      "header": {
-        "base": {
-          "value": "#969696",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "#969696"
-          },
-          "name": "ColorIconHeaderBase",
-          "attributes": {
-            "category": "color",
-            "type": "icon",
-            "item": "header",
-            "subitem": "base"
-          },
-          "path": [
-            "color",
-            "icon",
-            "header",
-            "base"
-          ]
-        },
-        "active": {
-          "value": "#636363",
-          "filePath": "tokens.json",
-          "isSource": true,
-          "original": {
-            "value": "#636363"
-          },
-          "name": "ColorIconHeaderActive",
-          "attributes": {
-            "category": "color",
-            "type": "icon",
-            "item": "header",
-            "subitem": "active"
-          },
-          "path": [
-            "color",
-            "icon",
-            "header",
-            "active"
-          ]
-        }
-      },
       "base": {
         "value": "#636363",
         "filePath": "tokens.json",
