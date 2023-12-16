@@ -55,7 +55,7 @@ $.each(dropdownPages.pages,function(){
 // Handlebars partials
 Handlebars.registerPartial(
     'mobileDropBullet',
-    '<ul class="hidden bg-background-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-text-base/40"><a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a></li>{{/each}}</ul>'
+    '<ul class="hidden bg-background-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-text-base/10"><a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a></li>{{/each}}</ul>'
 );
 
 Handlebars.registerPartial(
@@ -68,9 +68,15 @@ Handlebars.registerPartial(
     '<footer class="w-11/12 mx-auto mt-20 mb-8"><p class="text-sm pt-3 border-t-[1px] text-text-base border-text-base">&#169; Copyright 2023 Carly Ciricillo</p><ul class="flex list-none my-3">{{#each icons}}<li class="pr-4"><a target="_blank" href="{{ url }}"><img width="25" src="{{ img }}" alt="{{ alt }}"></a></li>{{/each}}</ul></footer>'
 );
 
+Handlebars.registerPartial(
+    'skills',
+    '{{#each skills}}<li class="icon-container float-left overflow-hidden"><div class="icon w-[75px] h-[85px] box-border m-0"><div class="h-11 flex justify-center items-center"><img class="block my-0 mx-auto max-w-[44px] max-h-11" src="./img/{{ icon }}" alt="{{ label }}" /></div><span class="block font-sans text-xs text-center mt-4">{{ label }}</span></div></li>{{/each}}'
+);
+
 // Handlebars compilers
 $('#dropdown-container').append(Handlebars.compile($('#dropdown-template').html())(dropdownPages));
 $('#dropdown-container-mobile').append(Handlebars.compile($('#dropdown-template-mobile').html())(dropdownPages));
 $('#footer-container').append(Handlebars.compile($('#footer-template').html())(socialIcons));
+$('#skills-container').append(Handlebars.compile($('#skills-template').html())(mySkills));
 
 });

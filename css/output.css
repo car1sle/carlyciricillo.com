@@ -681,14 +681,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-2\.5 {
-  margin-top: 0.625rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -705,8 +697,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mb-5 {
@@ -757,8 +757,12 @@ video {
   height: 85px;
 }
 
-.h-\[45px\] {
-  height: 45px;
+.h-11 {
+  height: 2.75rem;
+}
+
+.max-h-11 {
+  max-height: 2.75rem;
 }
 
 .w-full {
@@ -789,16 +793,12 @@ video {
   width: calc(100% - 70px);
 }
 
-.w-\[75px\] {
-  width: 75px;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-\[150px\] {
   width: 150px;
+}
+
+.w-\[75px\] {
+  width: 75px;
 }
 
 .w-4\/5 {
@@ -807,6 +807,10 @@ video {
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-\[44px\] {
+  max-width: 44px;
 }
 
 .shrink {
@@ -914,21 +918,13 @@ video {
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
 }
 
-.border-text-base\/40 {
-  border-color: rgb(0 0 0 / 0.4);
+.border-text-base\/10 {
+  border-color: rgb(0 0 0 / 0.1);
 }
 
 .border-text-base {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-text-base\/20 {
-  border-color: rgb(0 0 0 / 0.2);
-}
-
-.border-text-base\/10 {
-  border-color: rgb(0 0 0 / 0.1);
 }
 
 .bg-background-page {
@@ -956,84 +952,12 @@ video {
   background-color: rgb(234 209 194 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/arrow-left\.png\'\)\] {
-  background-image: url('/img/arrow-left.png');
+.bg-\[url\(\'\.\.\/img\/arrow-left\.png\'\)\] {
+  background-image: url('../img/arrow-left.png');
 }
 
-.bg-\[url\(\'\/img\/HTML5\.png\'\)\] {
-  background-image: url('/img/HTML5.png');
-}
-
-.bg-\[url\(\'\/img\/CSS3\.png\'\)\] {
-  background-image: url('/img/CSS3.png');
-}
-
-.bg-\[url\(\'\/img\/JS\.png\'\)\] {
-  background-image: url('/img/JS.png');
-}
-
-.bg-\[url\(\'\/img\/React\.png\'\)\] {
-  background-image: url('/img/React.png');
-}
-
-.bg-\[url\(\'\/img\/Github\.png\'\)\] {
-  background-image: url('/img/Github.png');
-}
-
-.bg-\[url\(\'\/img\/Handlebars\.png\'\)\] {
-  background-image: url('/img/Handlebars.png');
-}
-
-.bg-\[url\(\'\/img\/Golang\.png\'\)\] {
-  background-image: url('/img/Golang.png');
-}
-
-.bg-\[url\(\'\/img\/TypeScript\.png\'\)\] {
-  background-image: url('/img/TypeScript.png');
-}
-
-.bg-\[url\(\'\/img\/Tailwind\.png\'\)\] {
-  background-image: url('/img/Tailwind.png');
-}
-
-.bg-\[url\(\'\/img\/Figma\.png\'\)\] {
-  background-image: url('/img/Figma.png');
-}
-
-.bg-\[url\(\'\/img\/Git\.png\'\)\] {
-  background-image: url('/img/Git.png');
-}
-
-.bg-\[url\(\'\/img\/jQuery\.png\'\)\] {
-  background-image: url('/img/jQuery.png');
-}
-
-.bg-\[url\(\'\/img\/Sketch\.png\'\)\] {
-  background-image: url('/img/Sketch.png');
-}
-
-.bg-\[url\(\'\/img\/Photoshop\.png\'\)\] {
-  background-image: url('/img/Photoshop.png');
-}
-
-.bg-\[url\(\'\/img\/Confluence\.png\'\)\] {
-  background-image: url('/img/Confluence.png');
-}
-
-.bg-\[url\(\'\/img\/Litmus\.png\'\)\] {
-  background-image: url('/img/Litmus.png');
-}
-
-.bg-\[url\(\'\/img\/Salesforce\.png\'\)\] {
-  background-image: url('/img/Salesforce.png');
-}
-
-.bg-\[url\(\'\/img\/Wrike\.png\'\)\] {
-  background-image: url('/img/Wrike.png');
-}
-
-.bg-\[url\(\'\/img\/arrow-right\.png\'\)\] {
-  background-image: url('/img/arrow-right.png');
+.bg-\[url\(\'\.\.\/img\/arrow-right\.png\'\)\] {
+  background-image: url('../img/arrow-right.png');
 }
 
 .bg-contain {
@@ -1252,12 +1176,6 @@ video {
   opacity: 0.4;
 }
 
-.shadow-\[0_17px_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
-  --tw-shadow: 0 17px 10px -10px rgba(0,0,0,0.5);
-  --tw-shadow-colored: 0 17px 10px -10px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-\[0_17px_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.4\)\] {
   --tw-shadow: 0 17px 10px -10px rgba(0,0,0,0.4);
   --tw-shadow-colored: 0 17px 10px -10px var(--tw-shadow-color);
@@ -1298,14 +1216,6 @@ video {
 .hover\:bg-background-button-hover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(234 209 194 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-text-base\/40:hover {
-  background-color: rgb(0 0 0 / 0.4);
-}
-
-.hover\:bg-text-base\/20:hover {
-  background-color: rgb(0 0 0 / 0.2);
 }
 
 .hover\:bg-text-base\/10:hover {
@@ -1466,6 +1376,10 @@ video {
 
   .lg\:gap-0 {
     gap: 0px;
+  }
+
+  .lg\:leading-\[1\.75rem\] {
+    line-height: 1.75rem;
   }
 }
 

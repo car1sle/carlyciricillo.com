@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 "use strict";
 
 class IconCarousel {
@@ -129,3 +131,5 @@ class IconCarousel {
     }
 }
 var skillsIconCarousel = new IconCarousel("#skills-icon-carousel");
+
+});
