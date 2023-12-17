@@ -55,12 +55,24 @@ $.each(dropdownPages.pages,function(){
 // Handlebars partials
 Handlebars.registerPartial(
     'mobileDropBullet',
-    '<ul class="hidden bg-background-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">{{#each pages}}<li class="block font-sans text-lg leading-none last-of-type:pb-1 border-t-2 border-text-base/10"><a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a></li>{{/each}}</ul>'
+    `<ul class="hidden bg-background-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
+        {{#each pages}}
+        <li class="block text-lg leading-none last-of-type:pb-1 border-t-2 border-text-base/10">
+            <a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a>
+        </li>
+        {{/each}}
+    </ul>`
 );
 
 Handlebars.registerPartial(
     'desktopDropBullet',
-    '<ul class="bg-background-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-nav list-none overflow-hidden">{{#each pages}}<li class="font-sans text-base leading-none block text-right border-t-2 border-text-base/10 first-of-type:border-0 hover:bg-text-base/10 hover:border-background-dropdown"><a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a></li>{{/each}}</ul>'
+    `<ul class="bg-background-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-nav list-none overflow-hidden">
+        {{#each pages}}
+        <li class="text-base leading-none block text-right border-t-2 border-text-base/10 first-of-type:border-0 hover:bg-text-base/10 hover:border-background-dropdown">
+            <a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a>
+        </li>
+        {{/each}}
+    </ul>`
 );
 
 Handlebars.registerPartial(
@@ -87,7 +99,7 @@ Handlebars.registerPartial(
             <div class="h-11 flex justify-center items-center">
                 <img class="block my-0 mx-auto max-w-[32px] sm:max-w-[44px] max-h-8 sm:max-h-11" src="./img/{{ icon }}" alt="{{ label }}" />
             </div>
-            <span class="block font-sans text-[10px] sm:text-xs text-center mt-2 sm:mt-4">{{ label }}</span>
+            <span class="block text-[10px] sm:text-xs text-center mt-2 sm:mt-4">{{ label }}</span>
         </div>
     </li>
     {{/each}}`
