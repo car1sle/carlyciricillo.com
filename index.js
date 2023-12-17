@@ -58,7 +58,7 @@ Handlebars.registerPartial(
     `<ul class="hidden bg-background-dropdown list-none m-0 p-0" id="mobile-menu-dropdown">
         {{#each pages}}
         <li class="block text-lg leading-none last-of-type:pb-1 border-t-2 border-text-base/10">
-            <a href="{{ ../path }}{{ fileName }}" class="text-text-base block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a>
+            <a href="{{ ../path }}{{ fileName }}" class="block py-3.5 pl-8">{{ name }}{{#if currentPage}}&nbsp;<span class="text-icon-accent">&#x25cf;</span>{{/if}}</a>
         </li>
         {{/each}}
     </ul>`
@@ -69,7 +69,7 @@ Handlebars.registerPartial(
     `<ul class="bg-background-dropdown w-[150px] m-0 group-hover:mt-1.5 rounded-radius-nav list-none overflow-hidden">
         {{#each pages}}
         <li class="text-base leading-none block text-right border-t-2 border-text-base/10 first-of-type:border-0 hover:bg-text-base/10 hover:border-background-dropdown">
-            <a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle text-text-base">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a>
+            <a href="{{ ../path }}{{ fileName }}" class="block pr-4 leading-[45px] align-middle">{{#if currentPage }}<span class="text-icon-accent">&#x25cf;</span>&nbsp;{{/if}}{{ name }}</a>
         </li>
         {{/each}}
     </ul>`
@@ -78,7 +78,7 @@ Handlebars.registerPartial(
 Handlebars.registerPartial(
     'footer',
     `<footer class="w-11/12 mx-auto mt-20 mb-8">
-        <p class="text-sm pt-3 border-t-[1px] text-text-base border-text-base">&#169; Copyright 2023 Carly Ciricillo</p>
+        <p class="text-sm pt-3 border-t-[1px] border-text-base">&#169; Copyright 2023 Carly Ciricillo</p>
         <ul class="flex list-none my-3">
             {{#each icons}}
             <li class="pr-4">
@@ -109,8 +109,8 @@ Handlebars.registerPartial(
     'creds',
     `{{#each creds}}
     <li class="basis-[48%] xs:basis-[45%] lg:basis-[24%] shrink bg-[#ffffff] border border-[#d4d4d4] rounded-radius-card shadow-[0_17px_10px_-10px_rgba(0,0,0,0.4)] hover:shadow-[0_37px_20px_-20px_rgba(0,0,0,0.3)] hover:translate-x-0 hover:-translate-y-[10px] ease-in-out duration-300">
-        <a href="{{ url }}" target="_blank">
-            <div class="text-center text-text-base my-5">
+        <a href="{{ url }}" target="_blank" class="text-text-base">
+            <div class="text-center my-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-auto mb-2 stroke-icon-base">{{{ icon }}}</svg>
                 <span class="text-xs">{{ copy1 }}</span><br><b class="text-sm xs:text-base">{{ copy2 }}</b><br><span class="text-xs xs:text-sm">{{ copy3 }}</span><br><i class="text-text-small text-xs">{{ copy4 }}</i>
             </div>

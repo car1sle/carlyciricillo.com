@@ -22,7 +22,7 @@
           <div class="flex items-center justify-between h-14 sm:h-16 mx-5 sm:mx-8 relative">
             <!-- Begin mobile menu button -->
             <div class="sm:hidden">
-              <button type="button" aria-controls="mobile-menu" aria-expanded="false" class="text-text-base" id="mobile-menu-button">
+              <button type="button" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
                 <!-- Hamburger icon when menu is closed -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" id="mobile-menu-button-closed">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -35,7 +35,7 @@
             </div>
             <!-- Begin logo -->
             <div class="text-center sm:text-left">
-              <a href="./" class="font-cursive text-text-base text-2xl font-bold">carlyciricillo.com</a>
+              <a href="./" class="font-cursive text-2xl font-bold">carlyciricillo.com</a>
             </div>
             <!-- Begin desktop nav -->
             <ul class="hidden sm:flex space-x-2 justify-end items-center overflow-hidden list-none my-0 p-0">
@@ -44,7 +44,7 @@
                 <a href="./" class="text-base leading-none px-3.5 py-2.5 rounded-radius-nav bg-background-button-active">About Me</a>
               </li>
               <li class="overflow-hidden group">
-                <button class="flex items-center gap-0.5 text-base leading-none text-text-base px-3.5 py-2.5 rounded-radius-nav group-hover:bg-background-button-hover">
+                <button class="flex items-center gap-0.5 text-base leading-none px-3.5 py-2.5 rounded-radius-nav group-hover:bg-background-button-hover">
                   Projects
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-text-base" fill="none" viewBox="0 0 24 24" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -65,10 +65,10 @@
         <div class="hidden sm:hidden" id="mobile-menu">
           <ul class="px-2 pt-2 pb-3 m-0 space-y-1 list-none">
             <li class="block text-lg leading-none px-4 rounded-radius-nav hover:bg-background-button-hover">
-              <a href="./" class="text-text-base block py-3.5">About Me</a>
+              <a href="./" class="block py-3.5">About Me</a>
             </li>
             <li class="block overflow-hidden group rounded-radius-nav">
-              <button class="w-full flex items-center gap-0.5 text-lg leading-none text-text-base px-4 py-3.5 group-hover:bg-background-button-hover" id="mobile-menu-dropdown-button" aria-controls="mobile-menu-dropdown" aria-expanded="false">
+              <button class="w-full flex items-center gap-0.5 text-lg leading-none px-4 py-3.5 group-hover:bg-background-button-hover" id="mobile-menu-dropdown-button" aria-controls="mobile-menu-dropdown" aria-expanded="false">
                 Projects
                 <!-- Chevron when dropdown is closed -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-text-base" fill="none" viewBox="0 0 24 24" stroke-width="4" id="chevron-closed">
@@ -97,16 +97,16 @@
         </div>
         <div class="pt-5 md:pt-0 basis-3/5">
           <div class="mx-auto md:mx-0 w-11/12">
-            <p class="mt-0 lg:mt-1 mx-auto text-lg md:text-base text-text-base sm:leading-[1.85rem] md:leading-[1.65rem] lg:leading-[1.75rem]">Hi, I'm Carly &#x1F44B;</p>
-            <p class="mx-auto text-lg md:text-base mt-3 lg:mt-6 text-text-base sm:leading-[1.85rem] md:leading-[1.65rem] lg:leading-[1.75rem]">I'm a Senior Software Engineer at <a href="https://www.wunderkind.co/solutions/multichannel-for-retailers/" target="_blank" class="text-text-accent">Wunderkind</a>. As part of the team that integrates our triggered email product for online retailers, I develop responsive, user-personalized HTML/CSS emails, and contribute to internal tools that allow us to produce emails at scale.</p>
-            <p class="mx-auto text-lg md:text-base mt-3 lg:mt-6 text-text-base sm:leading-[1.85rem] md:leading-[1.65rem] lg:leading-[1.75rem]">In recent years I've been pursuing a <a href="https://extension.harvard.edu/academics/programs/front-end-web-development-certificate/" target="_blank" class="text-text-accent">Front End graduate certificate</a>, to be completed December 2024. I've also just self-published <a href="https://www.amazon.com/Just-Cant-Sleep-Elizabeth-Lender/dp/B0CN3WSGY5/ref=tmm_hrd_swatch_0" target="_blank" class="text-text-accent">a children's book</a> with my mom and sister. I enjoy long jogs outside, playing board games and <a href="https://www.yelp.com/user_local_photos?userid=2KwA1sXiWMHzpVYjtxtKOA" target="_blank" class="text-text-accent">Yelping photos</a> of good&nbsp;food.</p>
+            <p class="mt-0 lg:mt-1 mx-auto text-lg md:text-base sm:leading-[1.85rem] md:leading-[1.65rem] lg:leading-[1.75rem]">Hi, I'm Carly &#x1F44B;</p>
+            <p class="mx-auto text-lg md:text-base mt-3 lg:mt-6 sm:leading-[1.85rem] md:leading-[1.65rem] lg:leading-[1.75rem]">I'm a Senior Software Engineer at <a href="https://www.wunderkind.co/solutions/multichannel-for-retailers/" target="_blank">Wunderkind</a>. As part of the team that integrates our triggered email product for online retailers, I develop responsive, user-personalized HTML/CSS emails, and contribute to internal tools that allow us to produce emails at scale.</p>
+            <p class="mx-auto text-lg md:text-base mt-3 lg:mt-6 sm:leading-[1.85rem] md:leading-[1.65rem] lg:leading-[1.75rem]">In recent years I've been pursuing a <a href="https://extension.harvard.edu/academics/programs/front-end-web-development-certificate/" target="_blank">Front End graduate certificate</a>, to be completed December 2024. I've also just self-published <a href="https://www.amazon.com/Just-Cant-Sleep-Elizabeth-Lender/dp/B0CN3WSGY5/ref=tmm_hrd_swatch_0" target="_blank">a children's book</a> with my mom and sister. I enjoy long jogs outside, playing board games and <a href="https://www.yelp.com/user_local_photos?userid=2KwA1sXiWMHzpVYjtxtKOA" target="_blank">Yelping photos</a> of good&nbsp;food.</p>
           </div>
         </div>
       </div>
       <!-- Begin skills -->
       <div class="w-11/12 mx-auto pt-10 md:pt-12">
         <!-- Begin skills headline & mobile arrows -->
-        <p class="mx-auto text-lg md:text-base text-text-base underline underline-offset-2 text-center">Top Skills</p>
+        <p class="mx-auto text-lg md:text-base underline underline-offset-2 text-center">Top Skills</p>
         <div class="mt-1.5 flex sm:hidden justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="mt-1 w-4 h-4 inline sm:hidden">
             <path fill-rule="evenodd" d="M15.79 14.77a.75.75 0 01-1.06.02l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 111.04 1.08L11.832 10l3.938 3.71a.75.75 0 01.02 1.06zm-6 0a.75.75 0 01-1.06.02l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 111.04 1.08L5.832 10l3.938 3.71a.75.75 0 01.02 1.06z" clip-rule="evenodd" />
@@ -134,7 +134,7 @@
         </div>
       </div>
       <div class="w-11/12 mx-auto mb-14 pt-10 md:pt-12">
-        <p class="mx-auto text-lg md:text-base text-text-base underline underline-offset-2 text-center">Credentials</p>
+        <p class="mx-auto text-lg md:text-base underline underline-offset-2 text-center">Credentials</p>
         <!-- Begin creds tiles -->
         <!-- TODO: put bg in tokens -->
         <ul id="creds-container" class="list-none mt-6 flex flex-wrap gap-3 justify-center lg:gap-0 lg:justify-between w-full"></ul>

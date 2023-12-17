@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 17 Dec 2023 14:42:00 GMT
+ * Generated on Sun, 17 Dec 2023 16:51:35 GMT
  */
 
 module.exports = {
@@ -163,11 +163,11 @@ module.exports = {
     },
     "text": {
       "base": {
-        "value": "#000000",
+        "value": "#0a0a0a",
         "filePath": "tokens.json",
         "isSource": true,
         "original": {
-          "value": "#000000"
+          "value": "#0a0a0a"
         },
         "name": "ColorTextBase",
         "attributes": {

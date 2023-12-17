@@ -1,5 +1,6 @@
 // Run node tailwind.config.js to see the console
 
+const plugin = require('tailwindcss/plugin')
 const tokens = require('./sd-tokens.js')
 
 var sdColorTokens = {}
@@ -66,5 +67,16 @@ module.exports = {
     // add more tokens while keeping the defaults?
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addBase, theme }) {
+      addBase({
+        'html': { 
+          color: theme('colors.text-base') 
+        },
+        'main a': { 
+          color: theme('colors.text-accent') 
+        },
+      })
+    })
+  ],
 }
