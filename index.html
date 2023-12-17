@@ -107,16 +107,16 @@
         <p class="mx-auto text-lg md:text-base text-text-base underline underline-offset-2 text-center">Top Skills</p>
         <!-- Begin skills carousel -->
         <div id="skills-icon-carousel" class="mt-6 w-full">
-          <div class="inline-block w-[30px] carousel-control">
+          <div class="hidden w-0 sm:inline-block sm:w-[30px] carousel-control">
             <i class="left opacity-40 block w-5 h-[25px] bg-no-repeat bg-contain bg-center my-0 mx-auto bg-[url('../img/arrow-left.png')]"></i>
           </div>
-          <div class="icon-carousel-outer w-[calc(100%-70px)] inline-block align-middle overflow-auto">
+          <div class="icon-carousel-outer w-full sm:w-[calc(100%-70px)] inline-block align-middle overflow-auto">
             <ul id="skills-container" class="icon-carousel-container list-none m-0 p-0"></ul>
             <script id="skills-template" type="text/x-handlebars-template">
               {{> skills icon=icon label=label }}
             </script>
           </div>
-          <div class="inline-block w-[30px] carousel-control">
+          <div class="hidden w-0 sm:inline-block sm:w-[30px] carousel-control">
             <i class="right block w-5 h-[25px] bg-no-repeat bg-contain bg-center my-0 mx-auto bg-[url('../img/arrow-right.png')] cursor-pointer"></i>
           </div>
         </div>

@@ -22,13 +22,19 @@ class IconCarousel {
                 this._disableScrollIcons([]);
             });
         };
+        // controlling icons based on clicking
         this._slide = (direction, scrollValue) => {
             // calculate scroll value
             let scrollLeft = this._getScrollValue(direction, scrollValue);
             // prevent overscrolling
             if ((direction === "+" && scrollLeft < this.maxScrollPosition) ||
                 (direction === "-" && scrollLeft >= 0)) {
-                this.scrollPosition = scrollLeft;
+                    this.scrollPosition = 
+                    jQuery('.icon-carousel-outer').scrollLeft() > scrollLeft && direction === "+" ? 
+                    jQuery('.icon-carousel-outer').scrollLeft() + 75 : 
+                    direction === "-" ? 
+                    Math.max(0, jQuery('.icon-carousel-outer').scrollLeft() - 75) : 
+                    scrollLeft;
             }
             // toggle scroll icons
             if (this.scrollPosition == 0) {
@@ -42,8 +48,22 @@ class IconCarousel {
                 this._disableScrollIcons([]);
             }
             // move carousel
-            this.scroller.animate({ scrollLeft: scrollLeft });
+            this.scroller.animate({ scrollLeft: this.scrollPosition });
         };
+        // controlling icons based on scrolling
+        $('.icon-carousel-outer').on('scroll', () => {
+            console.log('SCROLL' + jQuery('.icon-carousel-outer').scrollLeft())
+            console.log('MAX' + (jQuery('.icon-carousel-outer').get(0).scrollWidth - jQuery('.icon-carousel-outer').get(0).clientWidth))
+            if (jQuery('.icon-carousel-outer').scrollLeft() === 0) {
+                this._disableScrollIcons(["left"]);
+            } else if (jQuery('.icon-carousel-outer').scrollLeft() >= ((jQuery('.icon-carousel-outer').get(0).scrollWidth - jQuery('.icon-carousel-outer').get(0).clientWidth) -1 )) {
+                this._disableScrollIcons(["right"]);
+            } else if (jQuery('#skills-icon-carousel i.left').css('opacity') === "0.4") {
+                this._enableScrollIcons(["left"]);
+            } else if (jQuery('#skills-icon-carousel i.right').css('opacity') === "0.4") {
+                this._enableScrollIcons(["right"]);
+            }
+        });
         // disable scroll buttons
         this._disableScrollIcons = (direction) => {
             if (direction.length === 0) {
@@ -63,6 +83,19 @@ class IconCarousel {
                         this.controlRight.css("opacity", "0.4");
                         this.controlRight.css("cursor", "default");
                     }
+                }
+            }
+        };
+        // enable scroll buttons
+        this._enableScrollIcons = (direction) => {
+            for (let i = 0, len = direction.length; i < len; i++) {
+                if (direction[i] === "left") {
+                    this.controlLeft.css("opacity", "1");
+                    this.controlLeft.css("cursor", "pointer");
+                }
+                if (direction[i] === "right") {
+                    this.controlRight.css("opacity", "1");
+                    this.controlRight.css("cursor", "pointer");
                 }
             }
         };

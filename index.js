@@ -70,7 +70,7 @@ Handlebars.registerPartial(
 
 Handlebars.registerPartial(
     'skills',
-    '{{#each skills}}<li class="icon-container float-left overflow-hidden"><div class="icon w-[75px] h-[85px] box-border m-0"><div class="h-11 flex justify-center items-center"><img class="block my-0 mx-auto max-w-[44px] max-h-11" src="./img/{{ icon }}" alt="{{ label }}" /></div><span class="block font-sans text-xs text-center mt-4">{{ label }}</span></div></li>{{/each}}'
+    '{{#each skills}}<li class="icon-container float-left overflow-hidden"><div class="icon w-[65px] sm:w-[75px] h-[85px] box-border m-0"><div class="h-11 flex justify-center items-center"><img class="block my-0 mx-auto max-w-[32px] sm:max-w-[44px] max-h-8 sm:max-h-11" src="./img/{{ icon }}" alt="{{ label }}" /></div><span class="block font-sans text-[10px] sm:text-xs text-center mt-2 sm:mt-4">{{ label }}</span></div></li>{{/each}}'
 );
 
 // Handlebars compilers
