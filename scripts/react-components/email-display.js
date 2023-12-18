@@ -7,7 +7,7 @@ const EmailDisplay = ({ h1, src1, src2, title1, title2 }) => {
       <button type="button"></button>
       <div>
         <h1 class="mb-2 font-bold text-lg">{h1}</h1>
-        <p class="mb-5 leading-7">This mobile-first, live-text Sonos campaign lets you know when items you viewed are back in stock. Dark mode media queries create a seamless inverted experience in open environments that support it. Toggle your device to dark mode to check it&nbsp;out!</p>
+        <p class="mb-5 leading-7">This mobile-first, live-text Sonos campaign lets you know when items you viewed are back in stock. Dark mode media queries create a seamless inverted experience in open environments that support it.</p>
         <div class="relative w-full overflow-hidden pt-[166.66%] mb-5">
           <iframe
               src={src1}
@@ -16,7 +16,7 @@ const EmailDisplay = ({ h1, src1, src2, title1, title2 }) => {
               class="absolute inset-x-0 inset-y-0 w-full h-full"
           ></iframe>
         </div>
-        <p class="mb-5 leading-7">One HTML template programmatically adapts to each unique customer. The variation above shows four products that came back in stock, while the variation below spotlights a single carted item at full width. Additionally, Salesforce AMPscript &#40;left unrendered for preview purposes&#41; toggles which Upgrade module will display. Find out how these triggered emails impact Sonos' bottom line in <a href="https://www.wunderkind.co/resources/case-studies/sonos/" target="_blank">the case study</a>!</p>
+        <p class="mb-5 leading-7">One HTML template programmatically adapts to each unique customer. The variation above shows four products that came back in stock, while the variation below spotlights a single carted item at full width. Additionally, Salesforce AMPscript &#40;left unrendered for preview purposes&#41; toggles which Upgrade module will display. Find out how these triggered emails impact Sonos' bottom line in <a href="https://www.wunderkind.co/resources/case-studies/sonos/" target="_blank">the case study</a>.</p>
         <div class="relative w-full overflow-hidden pt-[166.66%] mb-5">
           <iframe
               src={src2}

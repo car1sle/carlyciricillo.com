@@ -45,6 +45,7 @@ console.log("border tokens:", sdBorderTokens)
 module.exports = {
   content: [
   	'index.html',
+  	'404.html',
     'index.js',
     'pages/*.html',
     'scripts/*.js',
@@ -72,6 +73,12 @@ module.exports = {
       addBase({
         'html': { 
           color: theme('colors.text-base') 
+        },
+        'body': { 
+          backgroundColor: theme('colors.background-page') 
+        },
+        'nav': { 
+          backgroundColor: theme('colors.background-nav') 
         },
         'main a': { 
           color: theme('colors.text-accent') 

@@ -1,17 +1,17 @@
 const dropdownPages = {
     "pages": [
         {
-            "name": "About This Site",
+            "name": "About this site",
             "fileName": "about-site.html",
             "currentPage": false
         },
         {
-            "name": "HTML Emails",
+            "name": "HTML emails",
             "fileName": "html-emails.html",
             "currentPage": false
         },
         {
-            "name": "Lists.cm",
+            "name": "lists.cm",
             "fileName": "lists.html",
             "currentPage": false
         },
