@@ -9,12 +9,7 @@
 4) To check Tailwind version, run npm info tailwindcss version
 
 To dos:\
-Test on Firefox\
-About me shouldn't be the homepage?\
-Sitemap (site crawlers out that there that generate a sitemap for you, then you can just upload)\
-
-Future imporvements:\
-Dark mode\
-Change favicon for dark vs light mode? (https://stackoverflow.com/questions/59233531/safari-favicon-incorrectly-rendering-with-white-background // look @ tailwind dark mode documentation)\
-Keyboard accessibility\
-Inclusive hiding\
+Firefox tests\
+Resize width of max scroll area in skills caorusel when resizing browser/device width\
+Dark mode - Tailwind documentation; https://stackoverflow.com/questions/59233531/safari-favicon-incorrectly-rendering-with-white-background \
+Light blue flashes when clicking mobile nav on droid
