@@ -52,8 +52,6 @@ class IconCarousel {
         };
         // controlling icons based on scrolling
         $('.icon-carousel-outer').on('scroll', () => {
-            console.log('SCROLL' + jQuery('.icon-carousel-outer').scrollLeft())
-            console.log('MAX' + (jQuery('.icon-carousel-outer').get(0).scrollWidth - jQuery('.icon-carousel-outer').get(0).clientWidth))
             if (jQuery('.icon-carousel-outer').scrollLeft() === 0) {
                 this._disableScrollIcons(["left"]);
             } else if (jQuery('.icon-carousel-outer').scrollLeft() >= ((jQuery('.icon-carousel-outer').get(0).scrollWidth - jQuery('.icon-carousel-outer').get(0).clientWidth) -1 )) {

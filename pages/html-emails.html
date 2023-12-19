@@ -93,7 +93,40 @@
     <main class="w-11/12 md:w-full md:max-w-3xl mx-auto pt-20 sm:pt-24 md:pt-28">
       <h1 class="mb-4 font-bold text-2xl">HTML emails</h1>
       <p class="mb-5 leading-7">I specialize in responsive HTML/CSS email development and email automation. My engineering team in <a href="https://www.wunderkind.co/solutions/multichannel-for-retailers/" target="_blank">Wunderkind</a>'s client services department integrates user shopping history from our clients' ecomm platforms and ESPs dynamically into the email code using languages like JavaScript, Golang, Salesforce AMPscript and Responsys RPL. Below are some of my favorite examples of client&nbsp;work.</p>
-      <div id="email-display-container" class="my-10"></div>
+      <div class="my-10">
+        <div class="bg-background-dropdown">
+          <button id="accordion-title" class="relative flex items-center w-full text-left group p-3 outline-none border-b border-solid cursor-pointer border-icon-base hover:bg-text-base/5">
+              <h2>Sonos</h2>
+              <span class="ml-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-5 h-5">
+                      <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                  </svg>
+              </span>
+          </button>
+          <div class="hidden overflow-hidden p-4">
+            <p class="mb-5 leading-7">This mobile-first, live-text Sonos campaign lets you know when items you viewed are back in stock. Dark mode media queries create a seamless inverted experience in open environments that support it.</p>
+            <div class="relative w-full overflow-hidden pt-[166.66%] mb-5">
+              <iframe
+                  src="../html-emails/Sonos_BackInStock_September2022.html"
+                  title="Sonos-Back-In-Stock"
+                  name="Sonos-Back-In-Stock"
+                  allowtransparency="true"
+                  class="absolute mx-auto inset-x-0 inset-y-0 w-full sm:w-[601px] h-full bg-transparent"
+              ></iframe>
+            </div>
+            <p class="mb-5 leading-7">One HTML template programmatically adapts to each unique customer. The variation above shows four products that came back in stock, while the variation below spotlights a single carted item at full width. Additionally, Salesforce AMPscript &#40;left unrendered for preview purposes&#41; toggles which Upgrade module will display. Find out how these triggered emails impact Sonos' bottom line in <a href="https://www.wunderkind.co/resources/case-studies/sonos/" target="_blank">the case study</a>.</p>
+            <div class="relative w-full overflow-hidden pt-[166.66%] mb-5">
+              <iframe
+                  src="../html-emails/Sonos_CartAbandon_January2023.html"
+                  title="Sonos-Cart-Abandon"
+                  name="Sonos-Cart-Abandon"
+                  allowtransparency="true"
+                  class="absolute mx-auto inset-x-0 inset-y-0 w-full sm:w-[601px] h-full bg-transparent"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Begin footer -->
@@ -106,10 +139,6 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
     <script src="../scripts/sitewide-objs.js"></script>
     <script src="../index.js"></script>
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="../scripts/react-components/email-display.js" type="text/babel"></script>
+    <script src="../scripts/accordion.js"></script>
   </body>
 </html>

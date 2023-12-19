@@ -120,10 +120,10 @@ Handlebars.registerPartial(
 );
 
 // Handlebars compilers
-$('#dropdown-container').append(Handlebars.compile($('#dropdown-template').html())(dropdownPages));
-$('#dropdown-container-mobile').append(Handlebars.compile($('#dropdown-template-mobile').html())(dropdownPages));
-$('#footer-container').append(Handlebars.compile($('#footer-template').html())(socialIcons));
-$('#skills-container').append(Handlebars.compile($('#skills-template').html())(mySkills));
-$('#creds-container').append(Handlebars.compile($('#creds-template').html())(myCreds));
+($('#dropdown-container').length > 0) && $('#dropdown-container').append(Handlebars.compile($('#dropdown-template').html())(dropdownPages));
+($('#dropdown-container-mobile').length > 0) && $('#dropdown-container-mobile').append(Handlebars.compile($('#dropdown-template-mobile').html())(dropdownPages));
+($('#footer-container').length > 0) && $('#footer-container').append(Handlebars.compile($('#footer-template').html())(socialIcons));
+($('#skills-container').length > 0) && $('#skills-container').append(Handlebars.compile($('#skills-template').html())(mySkills));
+($('#creds-container').length > 0) && $('#creds-container').append(Handlebars.compile($('#creds-template').html())(myCreds));
 
 });
