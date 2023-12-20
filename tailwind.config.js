@@ -72,16 +72,16 @@ module.exports = {
     plugin(function({ addBase, theme }) {
       addBase({
         'html': { 
-          color: theme('colors.text-base') 
+          color: theme('colors.text-base'),
         },
         'body': { 
-          backgroundColor: theme('colors.background-page') 
+          backgroundColor: theme('colors.background-page'),
         },
         'nav': { 
-          backgroundColor: theme('colors.background-nav') 
+          backgroundColor: theme('colors.background-nav'),
         },
         'main a': { 
-          color: theme('colors.text-accent') 
+          color: theme('colors.text-accent'),
         },
       })
     })
