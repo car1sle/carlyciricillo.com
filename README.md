@@ -11,5 +11,5 @@
 To dos:\
 Firefox tests\
 Resize width of max scroll area in skills caorusel when resizing browser/device width\
-Dark mode - Tailwind documentation; https://stackoverflow.com/questions/59233531/safari-favicon-incorrectly-rendering-with-white-background\
+Dark mode - Tailwind documentation; https://stackoverflow.com/questions/59233531/safari-favicon-incorrectly-rendering-with-white-background \
 Bring tap highlight color in from Tailwind https://github.com/tailwindlabs/tailwindcss/discussions/2984
