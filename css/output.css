@@ -570,6 +570,10 @@ main a {
   visibility: visible;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -590,6 +594,14 @@ main a {
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
+}
+
+.bottom-\[-100\%\] {
+  bottom: -100%;
+}
+
+.bottom-\[0\%\] {
+  bottom: 0%;
 }
 
 .right-0 {
@@ -659,6 +671,10 @@ main a {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mt-0 {
@@ -753,6 +769,10 @@ main a {
   height: 25px;
 }
 
+.h-\[70px\] {
+  height: 70px;
+}
+
 .h-\[85px\] {
   height: 85px;
 }
@@ -765,8 +785,28 @@ main a {
   height: 100%;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[90px\] {
+  height: 90px;
+}
+
 .max-h-8 {
   max-height: 2rem;
+}
+
+.max-h-\[35px\] {
+  max-height: 35px;
+}
+
+.min-h-0 {
+  min-height: 0px;
+}
+
+.min-h-\[23px\] {
+  min-height: 23px;
 }
 
 .w-0 {
@@ -795,6 +835,10 @@ main a {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[150px\] {
@@ -829,6 +873,10 @@ main a {
   max-width: 430px;
 }
 
+.max-w-\[85px\] {
+  max-width: 85px;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -860,10 +908,6 @@ main a {
 
 .list-none {
   list-style-type: none;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .flex-wrap {
@@ -1083,11 +1127,6 @@ main a {
   padding-bottom: 0.875rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1160,6 +1199,10 @@ main a {
 
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .text-base {
@@ -1235,6 +1278,12 @@ main a {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-\[border\] {
+  transition-property: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1245,6 +1294,11 @@ main a {
 
 .\[-webkit-tap-highlight-color\:transparent\;\] {
   -webkit-tap-highlight-color: transparent;;
+}
+
+.first\:rounded-t-radius-nav:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .first-of-type\:border-0:first-of-type {
@@ -1416,6 +1470,10 @@ main a {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1425,8 +1483,16 @@ main a {
     margin-left: 1.75rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:min-h-\[23px\] {
+    min-height: 23px;
   }
 
   .md\:w-10\/12 {
