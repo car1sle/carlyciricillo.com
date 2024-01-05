@@ -8,6 +8,8 @@
 
 4) To check Tailwind version, run npm info tailwindcss version
 
+https://looker.x.co/dashboards/718
+
 To dos:\
 Firefox tests\
 Resize width of max scroll area in skills caorusel when resizing browser/device width\

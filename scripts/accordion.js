@@ -13,13 +13,13 @@ $('.accordion-title').hover(
         if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
             $(this).find('div.sliding-text-1').animate({
                 bottom: '100%'
-            }, 300);
+            }, 350);
         }
     },function() {
         if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
             $(this).find('div.sliding-text-1').animate({
                 bottom: '0%'
-            }, 300);
+            }, 350);
         }
     }
     );
@@ -28,13 +28,13 @@ $('.accordion-title').hover(
         if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
             $(this).find('div.sliding-text-2').animate({
                 bottom: '0%'
-            }, 300);
+            }, 350);
         }
     },function() {
         if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
             $(this).find('div.sliding-text-2').animate({
                 bottom: '-100%'
-            }, 300);
+            }, 350);
         }
     }
 );
@@ -74,10 +74,10 @@ $(".accordion-title").click(function(){
         if (accordionSiblingContents.find('.sliding-text-1').css('bottom') === '23px') {
             accordionSiblingContents.find('.sliding-text-1').animate({
                 bottom: '0%'
-            }, 300);
+            }, 350);
             accordionSiblingContents.find('.sliding-text-2').animate({
                 bottom: '-100%'
-            }, 300);
+            }, 350);
         }
     }
 
