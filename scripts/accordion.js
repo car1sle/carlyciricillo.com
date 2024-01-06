@@ -8,33 +8,30 @@ const contentIsHidden = (that) => {
     return that.children('.sliding-text-container').is(':visible') ?  false : true;
 }
 
+let hoverTimer;
+
 $('.accordion-title').hover(
     function() {
         if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
-            $(this).find('div.sliding-text-1').animate({
-                bottom: '100%'
-            }, 350);
+            hoverTimer = setTimeout(() => {
+                $(this).find('div.sliding-text-1').animate({
+                    bottom: '100%'
+                }, 300);
+                $(this).find('div.sliding-text-2').animate({
+                    bottom: '0%'
+                }, 300);
+            }, 500); // Set the threshold for hover time
         }
-    },function() {
-        if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
-            $(this).find('div.sliding-text-1').animate({
-                bottom: '0%'
-            }, 350);
-        }
-    }
-    );
-    $('.accordion-title').hover(
+    },
     function() {
+        clearTimeout(hoverTimer); // Clear the timer if leaving before 2 seconds
         if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
-            $(this).find('div.sliding-text-2').animate({
+            $(this).find('div.sliding-text-1').animate({
                 bottom: '0%'
-            }, 350);
-        }
-    },function() {
-        if (!contentIsOpen($(this)) && !contentIsHidden($(this))) {
+            }, 300);
             $(this).find('div.sliding-text-2').animate({
                 bottom: '-100%'
-            }, 350);
+            }, 300);
         }
     }
 );
@@ -47,10 +44,10 @@ $(".accordion-title").click(function(){
 
     // show/hide the clicked content
     if (accordionContent.hasClass('slidden-down')) {
-        accordionContent.slideUp(250);
+        accordionContent.slideUp(350);
         accordionContent.removeClass('slidden-down');
     } else {
-        accordionContent.slideDown(250);
+        accordionContent.slideDown(350);
         accordionContent.addClass('slidden-down');
     }
 
@@ -60,7 +57,7 @@ $(".accordion-title").click(function(){
     accordionTitle.children().children('svg.arrow').toggleClass('rotate-180');
 
     // hide all other accordion-contents
-    accordionSiblingContents.children('.slidden-down').slideUp(250);
+    accordionSiblingContents.children('.slidden-down').slideUp(350);
     accordionSiblingContents.children('.slidden-down').removeClass('slidden-down');
     accordionSiblingContents.children('.accordion-title').addClass('border-b');
     accordionSiblingContents.children('.accordion-content').removeClass('border-b');
@@ -74,10 +71,10 @@ $(".accordion-title").click(function(){
         if (accordionSiblingContents.find('.sliding-text-1').css('bottom') === '23px') {
             accordionSiblingContents.find('.sliding-text-1').animate({
                 bottom: '0%'
-            }, 350);
+            }, 300);
             accordionSiblingContents.find('.sliding-text-2').animate({
                 bottom: '-100%'
-            }, 350);
+            }, 300);
         }
     }
 

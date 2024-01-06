@@ -586,18 +586,12 @@ main a {
   position: sticky;
 }
 
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
-}
-
-.inset-y-0 {
-  top: 0px;
-  bottom: 0px;
-}
-
 .bottom-\[-100\%\] {
   bottom: -100%;
+}
+
+.bottom-\[-1rem\] {
+  bottom: -1rem;
 }
 
 .bottom-\[0\%\] {
@@ -606,6 +600,10 @@ main a {
 
 .right-0 {
   right: 0px;
+}
+
+.right-\[4\.5rem\] {
+  right: 4.5rem;
 }
 
 .top-0 {
@@ -711,6 +709,10 @@ main a {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -861,16 +863,16 @@ main a {
   max-width: 430px;
 }
 
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
 .max-w-\[85px\] {
   max-width: 85px;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
-}
-
-.max-w-\[460px\] {
-  max-width: 460px;
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .shrink {
@@ -1164,10 +1166,6 @@ main a {
   padding-top: 1.25rem;
 }
 
-.pt-\[166\.66\%\] {
-  padding-top: 166.66%;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1434,10 +1432,6 @@ main a {
 
   .sm\:w-\[30px\] {
     width: 30px;
-  }
-
-  .sm\:w-\[601px\] {
-    width: 601px;
   }
 
   .sm\:w-\[75px\] {
