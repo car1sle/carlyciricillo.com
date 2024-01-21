@@ -3,28 +3,47 @@ const emailExamples = {
         {
             "clientName": "Saks Off 5th",
             "logoImg": "../img/client-logos/S05.png",
-            "headline1": "Sent <b>~60k+ emails/day</b> with Wunderkind in 2023<sup>1</sup>",
+            "headline1": "Sending <b>&gt;500K emails/day</b> with Wunderkind<sup>1</sup>",
             "headline2" : "<b>Spotlight</b>: Personalized loyalty modules with Merkle",
-            "paragraph": `Since relaunching their loyalty program with Wunderkind in 2023, Saks has cited <a href="https://www.wunderkind.co/resources/case-studies/saks-off-5th/" target="_blank">2x revenue from triggered programs</a>. This email brings site visitors back to their abandoned shopping category, and integrates a personalized loyalty module to encourage spending with points. I was the lead email engineer on this program pilot with Saks, working with the PM to productize the way loyalty data is passed and displayed.`,
+            "paragraph": `Since relaunching their loyalty program with Wunderkind in 2023, Saks has cited <a href="https://www.wunderkind.co/resources/case-studies/saks-off-5th/" target="_blank">2x revenue from triggered programs</a>. This email brings site visitors back to their abandoned shopping category, and integrates a personalized loyalty module to encourage spending with points. I led email engineering on this program pilot with Saks, working with the PM to productize the way loyalty data is passed from Merkle and displayed.`,
             "webview1": "../html-emails/Saks_CategoryLoyalty_December2023.html",
             "webview1Copy": "See it online",
             "webview2": "",
             "webview2Copy": "",
             "img1": "../html-emails/figma-renders/Saks_CategoryLoyalty_Mobile.png",
-            "img2": "../html-emails/figma-renders/Saks_CategoryLoyalty_Tablet.png"
+            "img2": "../html-emails/figma-renders/Saks_CategoryLoyalty_Tablet.png",
+            "imgBorders": false,
+            "disclaimer": ""
+        },
+        {
+            "clientName": "Macy's",
+            "logoImg": "../img/client-logos/Macys.png",
+            "headline1": "Sending <b>&gt;2.5M emails/day</b> with Wunderkind<sup>1</sup>",
+            "headline2" : "<b>Spotlight</b>: Dynamic products from Wunderkind x Movable Ink",
+            "paragraph": `Macy's launched as the largest client on Wunderkind's email product in April 2022. I handled all email development requests for Macy's and their subsidiary Bloomingdale's through their 2023 renewal, which they bought into with a 16% price increase. During that first year, Wunderkind drove undeniable revenue for Macy's, with digital campaigns bringing in ~$410K+/day & 43x return on spend.<sup>2</sup>`,
+            "webview1": "../html-emails/Macys_ProductAbandon_Jan2024.html",
+            "webview1Copy": "Product Abandonment",
+            "webview2": "../html-emails/Macys_SearchAbandon_Jan2024.html",
+            "webview2Copy": "Search Abandonment",
+            "img1": "../html-emails/figma-renders/Macys_SearchAbandon_Mobile.jpg",
+            "img2": "../html-emails/figma-renders/Macys_ProductAbandon_Desktop.jpg",
+            "imgBorders": true,
+            "disclaimer": "<sup>2</sup>Stats taken from employee newsletter"
         },
         {
             "clientName": "Sonos",
             "logoImg": "../img/client-logos/Sonos.png",
-            "headline1": "Sent <b>~10k+ U.S. emails/day</b> with Wunderkind in 2023<sup>1</sup>",
-            "headline2" : "<b>Spotlight</b>: Triggered abandonment sends with AMPscript personalization",
-            "paragraph": `Wunderkind's triggered emails help Sonos <a href="https://www.wunderkind.co/resources/case-studies/sonos/" target="_blank">solve high onsite abandonment rates by highlighting product quality over discounts</a>. Only returning customers are shown an incentivization, to upgrade previous purchases. I led email development for a sequence of dynamic Sonos campaigns running across 22 geos, featuring live text, mobile responsiveness and dark mode media queries for supporting open environments.`,
+            "headline1": "Sending <b>&gt;14K U.S. emails/day</b> with Wunderkind<sup>1</sup>",
+            "headline2" : "<b>Spotlight</b>: Salesforce AMPscript toggles dynamic offers",
+            "paragraph": `Wunderkind's triggered emails help Sonos <a href="https://www.wunderkind.co/resources/case-studies/sonos/" target="_blank">solve high onsite abandonment rates by highlighting product quality over discounts</a>. AMPscript logic targets returning customers with credits to upgrade their previous purchases. I led email development for a sequence of dynamic Sonos campaigns running across 22 geos, featuring live text, mobile responsiveness and dark mode media queries for supporting open environments.`,
             "webview1": "../html-emails/Sonos_CartAbandon_January2023.html",
             "webview1Copy": "Cart abandonment",
             "webview2": "../html-emails/Sonos_BackInStock_September2022.html",
             "webview2Copy": "Back in stock",
             "img1": "../html-emails/figma-renders/Sonos_BackInStock_Mobile.png",
-            "img2": "../html-emails/figma-renders/Sonos_CartAbandon_Desktop.png"
+            "img2": "../html-emails/figma-renders/Sonos_CartAbandon_Desktop.png",
+            "imgBorders": false,
+            "disclaimer": ""
         }
     ]
 };
@@ -66,25 +85,30 @@ $(document).ready(function(){
                 </span>
             </button>
             <div class="accordion-content hidden overflow-hidden px-6 pt-3 pb-7 border-icon-base">
-            <p class="mb-2 leading-7">{{{ paragraph }}}</p>
-            <div>
-                <a href="{{ webview1 }}" target="_blank" target="_blank" class="text-text-base inline-flex items-center gap-1 group mb-2">
-                    <p class="leading-7 group-hover:underline">{{{ webview1Copy }}}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 24 24"><path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path></svg>
-                </a>
-            </div>
-            {{#if webview2}}
-            <div>
-                <a href="{{ webview2 }}" target="_blank" target="_blank" class="text-text-base inline-flex items-center gap-1 group mb-2">
-                    <p class="leading-7 group-hover:underline">{{{ webview2Copy }}}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 24 24"><path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path></svg>
-                </a>
-            </div>
-            {{/if}}
-            <div class="mt-8 flex justify-around items-start gap-2.5">
-                <img src="{{ img1 }}" class="max-w-[230px] h-auto object-contain shrink min-w-0" />
-                <img src="{{ img2 }}" class="max-w-[430px] h-auto object-contain shrink min-w-0" />
-            </div>
+                <p class="mb-3 leading-7">{{{ paragraph }}}</p>
+                <div>
+                    <a href="{{ webview1 }}" target="_blank" target="_blank" class="text-text-base inline-flex items-center gap-1 group mb-2">
+                        <p class="leading-7 group-hover:underline">{{{ webview1Copy }}}</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 24 24"><path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path></svg>
+                    </a>
+                </div>
+                {{#if webview2}}
+                <div>
+                    <a href="{{ webview2 }}" target="_blank" target="_blank" class="text-text-base inline-flex items-center gap-1 group mb-2">
+                        <p class="leading-7 group-hover:underline">{{{ webview2Copy }}}</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 24 24"><path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path></svg>
+                    </a>
+                </div>
+                {{/if}}
+                <div class="mt-8 flex justify-around items-start gap-2.5">
+                    <img src="{{ img1 }}" class="max-w-[230px] h-auto object-contain shrink min-w-0 {{#if imgBorders}}border border-[#b8b8b8] drop-shadow-lg{{/if}}" />
+                    <img src="{{ img2 }}" class="max-w-[430px] h-auto object-contain shrink min-w-0 {{#if imgBorders}}border border-[#b8b8b8] drop-shadow-lg{{/if}}" />
+                </div>
+                {{#if disclaimer}}
+                <div class="mt-10">
+                    <i class="text-sm text-text-small">{{{ disclaimer }}}</i>
+                </div>
+                {{/if}}
             </div>
         </div>
         {{/each}}`

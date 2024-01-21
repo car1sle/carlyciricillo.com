@@ -8,7 +8,10 @@
 
 4) To check Tailwind version, run npm info tailwindcss version
 
-https://looker.x.co/dashboards/718
+Saks https://connect.wunderkind.co/websites/5165/campaigns/inbox\
+Sonos https://connect.wunderkind.co/websites/3282/campaigns/inbox\
+Macy's https://connect.wunderkind.co/websites/4994/campaigns/inbox\
+
 
 To dos:\
 Firefox tests\

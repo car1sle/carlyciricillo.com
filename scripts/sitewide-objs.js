@@ -41,12 +41,12 @@ const socialIcons = {
             "alt": "CodePen"
         },
         {
-            "url": "https://reallygoodemails.com/car1sle/submitted",
+            "url": "https://reallygoodemails.com/u/car1sle",
             "img": "https://carlyciricillo.com/img/RGE-Gray.png",
             "alt": "Really Good Emails"
         },
         {
-            "url": "https://www.yelp.com/user_local_photos?userid=2KwA1sXiWMHzpVYjtxtKOA",
+            "url": "https://www.yelp.com/user_details?userid=2KwA1sXiWMHzpVYjtxtKOA",
             "img": "https://carlyciricillo.com/img/Yelp-Gray.png",
             "alt": "Yelp"
         }
