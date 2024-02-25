@@ -36,14 +36,14 @@ const socialIcons = {
             "alt": "GitHub"
         },
         {
+            "url": "https://reallygoodemails.com/u/car1sle/collections/kJ4GxHYoigUrFnNKJMmM",
+            "img": "https://carlyciricillo.com/img/RGE-Gray.png",
+            "alt": "Really Good Emails"
+        },
+        {
             "url": "https://codepen.io/car1sle",
             "img": "https://carlyciricillo.com/img/CodePen-Gray.png",
             "alt": "CodePen"
-        },
-        {
-            "url": "https://reallygoodemails.com/u/car1sle",
-            "img": "https://carlyciricillo.com/img/RGE-Gray.png",
-            "alt": "Really Good Emails"
         },
         {
             "url": "https://www.yelp.com/user_details?userid=2KwA1sXiWMHzpVYjtxtKOA",
