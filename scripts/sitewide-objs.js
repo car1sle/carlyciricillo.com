@@ -72,40 +72,52 @@ const mySkills = {
             "icon": "React.png"
         },
         {
-            "label": "Handlebars",
-            "icon": "Handlebars.png"
-        },
-        {
             "label": "TypeScript",
             "icon": "TypeScript.png"
+        },
+        {
+            "label": "Node.js",
+            "icon": "NodeJS.png"
+        },
+        {
+            "label": "Jest",
+            "icon": "Jest.png"
         },
         {
             "label": "Go",
             "icon": "Golang.png"
         },
         {
-            "label": "Tailwind CSS",
+            "label": "TailwindCSS",
             "icon": "Tailwind.png"
-        },
-        {
-            "label": "Github",
-            "icon": "Github.png"
-        },
-        {
-            "label": "Looker",
-            "icon": "Looker.png"
         },
         {
             "label": "Git",
             "icon": "Git.png"
         },
         {
-            "label": "jQuery",
-            "icon": "jQuery.png"
+            "label": "Storybook",
+            "icon": "Storybook.png"
         },
         {
             "label": "Figma",
             "icon": "Figma.png"
+        },
+        {
+            "label": "Handlebars",
+            "icon": "Handlebars.png"
+        },
+        {
+            "label": "Looker",
+            "icon": "Looker.png"
+        },
+        {
+            "label": "Github",
+            "icon": "Github.png"
+        },
+        {
+            "label": "jQuery",
+            "icon": "jQuery.png"
         },
         {
             "label": "Photoshop",
