@@ -31,24 +31,24 @@ const socialIcons = {
             "alt": "LinkedIn"
         },
         {
-            "url": "https://github.com/car1sle/",
-            "img": "https://carlyciricillo.com/img/GitHub-Gray.png",
-            "alt": "GitHub"
-        },
-        {
             "url": "https://reallygoodemails.com/u/car1sle/collections/kJ4GxHYoigUrFnNKJMmM",
             "img": "https://carlyciricillo.com/img/RGE-Gray.png",
             "alt": "Really Good Emails"
         },
         {
-            "url": "https://codepen.io/car1sle",
-            "img": "https://carlyciricillo.com/img/CodePen-Gray.png",
-            "alt": "CodePen"
+            "url": "https://github.com/car1sle/",
+            "img": "https://carlyciricillo.com/img/GitHub-Gray.png",
+            "alt": "GitHub"
         },
         {
             "url": "https://www.yelp.com/user_details?userid=2KwA1sXiWMHzpVYjtxtKOA",
             "img": "https://carlyciricillo.com/img/Yelp-Gray.png",
             "alt": "Yelp"
+        },
+        {
+            "url": "https://codepen.io/car1sle",
+            "img": "https://carlyciricillo.com/img/CodePen-Gray.png",
+            "alt": "CodePen"
         }
     ]
 };
@@ -56,28 +56,84 @@ const socialIcons = {
 const mySkills = {
     "skills": [
         {
-            "label": "HTML5",
+            "label": "HTML",
             "icon": "HTML5.png"
         },
         {
-            "label": "CSS3",
+            "label": "CSS",
             "icon": "CSS3.png"
         },
         {
-            "label": "JS ES6",
+            "label": "JavaScript",
             "icon": "JS.png"
         },
         {
-            "label": "React.js",
-            "icon": "React.png"
+            "label": "Salesforce",
+            "icon": "Salesforce.png"
+        },
+        {
+            "label": "Litmus",
+            "icon": "Litmus.png"
+        },
+        {
+            "label": "Figma",
+            "icon": "Figma.png"
+        },
+        {
+            "label": "Movable Ink",
+            "icon": "Movable-Ink.png"
+        },
+        {
+            "label": "Github",
+            "icon": "Github.png"
+        },
+        {
+            "label": "TailwindCSS",
+            "icon": "Tailwind.png"
+        },
+        {
+            "label": "Photoshop",
+            "icon": "Photoshop.png"
+        },
+        {
+            "label": "Confluence",
+            "icon": "Confluence.png"
+        },
+        {
+            "label": "Looker",
+            "icon": "Looker.png"
+        },
+        {
+            "label": "jQuery",
+            "icon": "jQuery.png"
+        },
+        {
+            "label": "Storybook",
+            "icon": "Storybook.png"
+        },
+        {
+            "label": "Git",
+            "icon": "Git.png"
+        },
+        {
+            "label": "Node.js",
+            "icon": "NodeJS.png"
+        },
+        {
+            "label": "Handlebars",
+            "icon": "Handlebars.png"
+        },
+        {
+            "label": "Jira",
+            "icon": "Jira.png"
         },
         {
             "label": "TypeScript",
             "icon": "TypeScript.png"
         },
         {
-            "label": "Node.js",
-            "icon": "NodeJS.png"
+            "label": "React.js",
+            "icon": "React.png"
         },
         {
             "label": "Jest",
@@ -86,58 +142,6 @@ const mySkills = {
         {
             "label": "Go",
             "icon": "Golang.png"
-        },
-        {
-            "label": "TailwindCSS",
-            "icon": "Tailwind.png"
-        },
-        {
-            "label": "Git",
-            "icon": "Git.png"
-        },
-        {
-            "label": "Storybook",
-            "icon": "Storybook.png"
-        },
-        {
-            "label": "Figma",
-            "icon": "Figma.png"
-        },
-        {
-            "label": "Handlebars",
-            "icon": "Handlebars.png"
-        },
-        {
-            "label": "Looker",
-            "icon": "Looker.png"
-        },
-        {
-            "label": "Github",
-            "icon": "Github.png"
-        },
-        {
-            "label": "jQuery",
-            "icon": "jQuery.png"
-        },
-        {
-            "label": "Photoshop",
-            "icon": "Photoshop.png"
-        },
-        {
-            "label": "Jira",
-            "icon": "Jira.png"
-        },
-        {
-            "label": "Salesforce",
-            "icon": "Salesforce.png"
-        },
-        {
-            "label": "Confluence",
-            "icon": "Confluence.png"
-        },
-        {
-            "label": "Litmus",
-            "icon": "Litmus.png"
         }
     ]
 };
