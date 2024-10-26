@@ -1,22 +1,22 @@
 const dropdownPages = {
     "pages": [
         {
-            "name": "About this site",
-            "fileName": "about-site.html",
-            "currentPage": false
-        },
-        {
-            "name": "HTML emails",
+            "name": "Email Design",
             "fileName": "html-emails.html",
             "currentPage": false
         },
         {
-            "name": "lists.cm",
+            "name": "This Website",
+            "fileName": "about-site.html",
+            "currentPage": false
+        },
+        {
+            "name": "Lists.cm",
             "fileName": "lists.html",
             "currentPage": false
         },
         {
-            "name": "React",
+            "name": "React Timer",
             "fileName": "react.html",
             "currentPage": false
         }
@@ -44,12 +44,13 @@ const socialIcons = {
             "url": "https://www.yelp.com/user_details?userid=2KwA1sXiWMHzpVYjtxtKOA",
             "img": "https://carlyciricillo.com/img/Yelp-Gray.png",
             "alt": "Yelp"
-        },
-        {
-            "url": "https://codepen.io/car1sle",
-            "img": "https://carlyciricillo.com/img/CodePen-Gray.png",
-            "alt": "CodePen"
         }
+        // },
+        // {
+        //     "url": "https://codepen.io/car1sle",
+        //     "img": "https://carlyciricillo.com/img/CodePen-Gray.png",
+        //     "alt": "CodePen"
+        // }
     ]
 };
 
