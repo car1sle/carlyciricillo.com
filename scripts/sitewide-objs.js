@@ -73,12 +73,20 @@ const mySkills = {
             "icon": "Salesforce.png"
         },
         {
-            "label": "Braze",
-            "icon": "Braze.png"
+            "label": "Klaviyo",
+            "icon": "Klaviyo.png"
         },
         {
             "label": "Litmus",
             "icon": "Litmus.png"
+        },
+        {
+            "label": "Email on Acid",
+            "icon": "EOA.png"
+        },
+        {
+            "label": "SQL",
+            "icon": "SQL.png"
         },
         {
             "label": "Figma",
@@ -127,14 +135,6 @@ const mySkills = {
         {
             "label": "Git",
             "icon": "Git.png"
-        },
-        {
-            "label": "Node.js",
-            "icon": "NodeJS.png"
-        },
-        {
-            "label": "React.js",
-            "icon": "React.png"
         },
         {
             "label": "Go",

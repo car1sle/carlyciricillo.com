@@ -78,7 +78,7 @@ Handlebars.registerPartial(
 Handlebars.registerPartial(
     'footer',
     `<footer class="w-11/12 mx-auto mt-20 mb-8">
-        <p class="text-sm pt-3 border-t-[1px] border-text-base">&#169; Copyright 2024 Carly Ciricillo</p>
+        <p class="text-sm pt-3 border-t-[1px] border-text-base">&#169; Copyright 2025 Carly Ciricillo</p>
         <ul class="flex list-none my-3">
             {{#each icons}}
             <li class="pr-4">
